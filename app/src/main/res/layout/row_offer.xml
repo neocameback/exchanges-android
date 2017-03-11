@@ -112,7 +112,7 @@
 
       <ImageView
           android:id="@+id/ivAction"
-          android:visibility="visible"
+          android:visibility="gone"
           android:layout_width="@dimen/button_size_normal"
           android:layout_height="@dimen/button_size_normal"
           android:background="@drawable/bg_white_selector"

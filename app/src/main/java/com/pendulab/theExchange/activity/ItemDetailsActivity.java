@@ -1430,8 +1430,8 @@ public class ItemDetailsActivity extends BaseLocationActivity implements View.On
     bundle.putString(GlobalValue.KEY_ITEM_NAME, currentItem.getTitle());
     bundle.putString(GlobalValue.KEY_ITEM_IMAGE, currentItem.getImage());
 
-    bundle.putString(GlobalValue.KEY_USERNAME, currentItem.getOwnerUsername());
-    bundle.putString(GlobalValue.KEY_USER_ID,  currentItem.getOwnerId());
+      bundle.putString(GlobalValue.KEY_USERNAME, currentItem.getOwnerUsername());
+      bundle.putString(GlobalValue.KEY_USER_ID,  currentItem.getOwnerId());
 
     bundle.putString(GlobalValue.KEY_CONVERSATION_ID, conversationID);
 

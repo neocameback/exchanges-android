@@ -73,8 +73,8 @@ public class OfferBuyAdapter extends BaseAdapter {
       holder = new ViewHolder();
       holder.ivUser = (ImageView) v.findViewById(R.id.ivUser);
       holder.ivDate = (ImageView) v.findViewById(R.id.ivDate);
-      holder.ivAction = (ImageView) v.findViewById(R.id.ivAction);
-      holder.ivAction.setVisibility(View.GONE);
+//      holder.ivAction = (ImageView) v.findViewById(R.id.ivAction);
+//      holder.ivAction.setVisibility(View.GONE);
       holder.tvOffer = (TextView) v.findViewById(R.id.tvOffer);
       holder.tvUser = (TextView) v.findViewById(R.id.tvUser);
       holder.tvDate = (TextView) v.findViewById(R.id.tvDate);
@@ -103,7 +103,7 @@ public class OfferBuyAdapter extends BaseAdapter {
 
       Glide.with(act).load(offer.getItemImage()).placeholder(R.drawable.image_placeholder).error(R.drawable.image_not_available).centerCrop().into(holder.ivUser);
       Glide.with(act).load(R.drawable.ic_clock).centerCrop().into(holder.ivDate);
-      Glide.with(act).load(R.drawable.ic_action_overflow_black).into(holder.ivAction);
+//      Glide.with(act).load(R.drawable.ic_action_overflow_black).into(holder.ivAction);
 
       holder.tvUser.setText(offer.getItemTitle());
       holder.tvDate.setText(offer.getDate());
@@ -183,12 +183,12 @@ public class OfferBuyAdapter extends BaseAdapter {
         }
       });
 
-      holder.ivAction.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-          listener.onClickAction(position);
-        }
-      });
+//      holder.ivAction.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View view) {
+//          listener.onClickAction(position);
+//        }
+//      });
 
     }
     return v;
@@ -196,7 +196,7 @@ public class OfferBuyAdapter extends BaseAdapter {
 
 
   class ViewHolder {
-    private ImageView ivUser, ivDate, ivAction, ivChat;
+    private ImageView ivUser, ivDate, ivChat;
     private TextView tvUser, tvOffer, tvDate, tvStatus;
     private LinearLayout llItem, llItemWrapper;
     private String itemId;

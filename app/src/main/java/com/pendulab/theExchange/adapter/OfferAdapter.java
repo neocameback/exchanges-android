@@ -78,7 +78,7 @@ public class OfferAdapter extends BaseAdapter {
       holder = new ViewHolder();
       holder.ivUser = (ImageView) v.findViewById(R.id.ivUser);
       holder.ivDate = (ImageView) v.findViewById(R.id.ivDate);
-      holder.ivAction = (ImageView) v.findViewById(R.id.ivAction);
+//      holder.ivAction = (ImageView) v.findViewById(R.id.ivAction);
       holder.ivAccept = (ImageView) v.findViewById(R.id.ivAccept);
       holder.ivReject = (ImageView) v.findViewById(R.id.ivReject);
       holder.tvOffer = (TextView) v.findViewById(R.id.tvOffer);
@@ -107,7 +107,7 @@ public class OfferAdapter extends BaseAdapter {
 
       Glide.with(act).load(offer.getAvatar()).placeholder(R.drawable.avatar_default).error(R.drawable.avatar_default).centerCrop().into(holder.ivUser);
       Glide.with(act).load(R.drawable.ic_clock).centerCrop().into(holder.ivDate);
-      Glide.with(act).load(R.drawable.ic_action_overflow_black).into(holder.ivAction);
+//      Glide.with(act).load(R.drawable.ic_action_overflow_black).into(holder.ivAction);
 
       holder.tvUser.setText(offer.getUsername());
       holder.tvDate.setText(offer.getDate());
@@ -150,17 +150,13 @@ public class OfferAdapter extends BaseAdapter {
 
       holder.tvOffer.setText(act.getString(R.string.offered) + " " + offer.getMoney() + " " + (offer.getMoney() > 1 ? act.getString(R.string.credit_s) : act.getString(R.string.credit)));
 
-      // Show actions for pending offer
-      if (offer.getStatus() == Offer.STATUS_ACCEPTED || offer.getStatus() == Offer.STATUS_REJECT
-          && isUserActionAllowed) {
+      // Show actions for offer
+      if (!isUserActionAllowed) {
         holder.ivAccept.setVisibility(View.GONE);
         holder.ivReject.setVisibility(View.GONE);
-        holder.ivAction.setVisibility(View.VISIBLE);
-
       } else {
         holder.ivAccept.setVisibility(View.VISIBLE);
         holder.ivReject.setVisibility(View.VISIBLE);
-        holder.ivAction.setVisibility(View.GONE);
 
         holder.ivAccept.setOnClickListener(new View.OnClickListener() {
           @Override
@@ -201,12 +197,6 @@ public class OfferAdapter extends BaseAdapter {
         }
       }
 
-//      if (!isUserActionAllowed) {
-//        holder.ivAction.setVisibility(View.INVISIBLE);
-//      } else {
-//        holder.ivAction.setVisibility(View.VISIBLE);
-//      }
-
       holder.ivUser.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -221,12 +211,12 @@ public class OfferAdapter extends BaseAdapter {
         }
       });
 
-      holder.ivAction.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-          listener.onClickAction(position);
-        }
-      });
+//      holder.ivAction.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View view) {
+//          listener.onClickAction(position);
+//        }
+//      });
 
     }
     return v;
@@ -239,7 +229,7 @@ public class OfferAdapter extends BaseAdapter {
 
 
   class ViewHolder {
-    private ImageView ivUser, ivDate, ivAction, ivAccept, ivReject, ivChat;
+    private ImageView ivUser, ivDate, ivAccept, ivReject, ivChat;
     private TextView tvUser, tvOffer, tvDate, tvStatus;
     private LinearLayout llItem, llItemWrapper;
     private String itemId;

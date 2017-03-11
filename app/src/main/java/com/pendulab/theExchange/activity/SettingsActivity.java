@@ -44,7 +44,7 @@ public class SettingsActivity extends BaseActivity {
   }
 
   public void onLanguage(View v) {
-    DialogUtility.showShortToast(self, "Comming soon");
+    DialogUtility.showShortToast(self, "Coming soon");
   }
 
   public void onChangePassword(View v) {
@@ -63,22 +63,22 @@ public class SettingsActivity extends BaseActivity {
   }
 
   public void onTradeCreditRanking(View v) {
-    DialogUtility.showShortToast(self, "Comming soon");
+    DialogUtility.showShortToast(self, "Coming soon");
   }
 
   public void onHelp(View v) {
-    DialogUtility.showShortToast(self, "Comming soon");
+    DialogUtility.showShortToast(self, "Coming soon");
   }
 
   public void onEmailSupport(View v) {
-    DialogUtility.showShortToast(self, "Comming soon");
+    DialogUtility.showShortToast(self, "Coming soon");
   }
 
   public void onCommunityRule(View v) {
-    DialogUtility.showShortToast(self, "Comming soon");
+    DialogUtility.showShortToast(self, "Coming soon");
   }
 
   public void onAbout(View v) {
-    DialogUtility.showShortToast(self, "Comming soon");
+    DialogUtility.showShortToast(self, "Coming soon");
   }
 }

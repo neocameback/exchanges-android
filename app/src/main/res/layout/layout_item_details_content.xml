@@ -47,6 +47,7 @@
           android:layout_width="@dimen/button_size_xsmall"
           android:layout_height="@dimen/button_size_xsmall"
           android:layout_centerVertical="true"
+          android:visibility="gone"
           android:layout_marginRight="@dimen/margin_padding_tiny"
           android:layout_toLeftOf="@+id/tvLikeCount"/>
 
@@ -55,6 +56,7 @@
           style="@style/Layout.WrapWidthHeight"
           android:layout_alignParentRight="true"
           android:layout_centerInParent="true"
+          android:visibility="gone"
           android:textColor="@color/app_primary_text_color"
           android:textSize="@dimen/text_size_xxnormal"/>
     </LinearLayout>
@@ -206,6 +208,7 @@
         android:id="@+id/ivLocation"
         android:layout_width="@dimen/button_size_small"
         android:layout_height="@dimen/button_size_small"
+        android:visibility="gone"
         android:layout_alignParentLeft="true"/>
 
     <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
@@ -213,6 +216,7 @@
         style="@style/Layout.FillWidth"
         android:layout_centerInParent="true"
         android:layout_marginLeft="@dimen/margin_padding_small"
+        android:visibility="gone"
         android:layout_toRightOf="@+id/ivLocation"
         android:background="@drawable/bg_white_selector"
         android:text="184 Xuân Diệu, Quảng An, Tây Hồ, Hà Nội, Việt Nam"
@@ -363,6 +367,7 @@
       android:paddingTop="@dimen/margin_padding_normal"
       android:paddingBottom="@dimen/margin_padding_normal"
       android:gravity="center_vertical"
+      android:visibility="gone"
       android:text="@string/post_a_public_comment"
       android:textColor="@color/app_primary_color"
       android:textSize="@dimen/text_size_xxnormal"/>

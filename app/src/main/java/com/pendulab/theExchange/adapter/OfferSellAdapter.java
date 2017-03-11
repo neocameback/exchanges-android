@@ -76,6 +76,8 @@ public class OfferSellAdapter extends BaseAdapter {
       holder.ivDate = (ImageView) v.findViewById(R.id.ivDate);
       holder.ivDate.setVisibility(View.GONE);
       holder.ivAction = (ImageView) v.findViewById(R.id.ivAction);
+      holder.ivAccept = (ImageView) v.findViewById(R.id.ivAccept);
+      holder.ivReject = (ImageView) v.findViewById(R.id.ivReject);
       holder.tvOffer = (TextView) v.findViewById(R.id.tvOffer);
       holder.tvUser = (TextView) v.findViewById(R.id.tvUser);
       holder.tvDate = (TextView) v.findViewById(R.id.tvDate);
@@ -109,6 +111,7 @@ public class OfferSellAdapter extends BaseAdapter {
       Drawable dr = act.getResources().getDrawable(R.drawable.ic_action_next_item);
       dr.setColorFilter(act.getResources().getColor(R.color.app_primary_text_color), PorterDuff.Mode.MULTIPLY);
       holder.ivAction.setImageDrawable(dr);
+      holder.ivAction.setVisibility(View.VISIBLE);
 
 
       holder.ivUser.setOnClickListener(new View.OnClickListener() {
@@ -129,7 +132,7 @@ public class OfferSellAdapter extends BaseAdapter {
   }
 
   class ViewHolder {
-    private ImageView ivUser, ivDate, ivAction, ivChat;
+    private ImageView ivUser, ivDate, ivAction, ivAccept, ivReject, ivChat;
     private TextView tvUser, tvOffer, tvDate, tvStatus;
     private LinearLayout llItem, llItemWrapper, llActions;
     private String itemId;
