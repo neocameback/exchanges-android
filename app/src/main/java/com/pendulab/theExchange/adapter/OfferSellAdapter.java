@@ -84,6 +84,7 @@ public class OfferSellAdapter extends BaseAdapter {
       holder.llItemWrapper = (LinearLayout) v.findViewById(R.id.llItemWrapper);
       holder.llActions = (LinearLayout) v.findViewById(R.id.llActions);
       holder.llItemWrapper.setVisibility(View.GONE);
+      holder.ivChat = (ImageView) v.findViewById(R.id.ivChat);
 
       RelativeLayout.LayoutParams paramAction = (RelativeLayout.LayoutParams) holder.llActions.getLayoutParams();
       paramAction.addRule(RelativeLayout.CENTER_VERTICAL);
@@ -103,7 +104,7 @@ public class OfferSellAdapter extends BaseAdapter {
 
       holder.tvUser.setText(offer.getItemTitle());
       holder.tvDate.setText(offer.getMoney() + " " + (offer.getMoney() > 1 ? act.getString(R.string.offers_lowcase) : act.getString(R.string.offer_lowcase)));
-
+      holder.ivChat.setVisibility(View.GONE);
 
       Drawable dr = act.getResources().getDrawable(R.drawable.ic_action_next_item);
       dr.setColorFilter(act.getResources().getColor(R.color.app_primary_text_color), PorterDuff.Mode.MULTIPLY);
@@ -128,7 +129,7 @@ public class OfferSellAdapter extends BaseAdapter {
   }
 
   class ViewHolder {
-    private ImageView ivUser, ivDate, ivAction;
+    private ImageView ivUser, ivDate, ivAction, ivChat;
     private TextView tvUser, tvOffer, tvDate, tvStatus;
     private LinearLayout llItem, llItemWrapper, llActions;
     private String itemId;

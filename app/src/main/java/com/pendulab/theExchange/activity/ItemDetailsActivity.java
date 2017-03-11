@@ -20,6 +20,7 @@ import com.pendulab.theExchange.model.Category;
 import com.pendulab.theExchange.model.Comment;
 import com.pendulab.theExchange.model.Item;
 import com.pendulab.theExchange.model.LocationObj;
+import com.pendulab.theExchange.model.Offer;
 import com.pendulab.theExchange.net.AsyncHttpPost;
 import com.pendulab.theExchange.net.AsyncHttpResponse;
 import com.pendulab.theExchange.net.NetBase;
@@ -69,6 +70,8 @@ import java.util.List;
 
 import in.flashbulb.coloredratingbar.ColoredRatingBar;
 import uk.co.deanwild.materialshowcaseview.MaterialShowcaseSequence;
+
+import static com.pendulab.theExchange.R.string.offer;
 
 /**
  * Created by Anh Ha Nguyen on 10/19/2015.
@@ -1426,8 +1429,10 @@ public class ItemDetailsActivity extends BaseLocationActivity implements View.On
     bundle.putString(GlobalValue.KEY_ITEM_ID, currentItem.getId());
     bundle.putString(GlobalValue.KEY_ITEM_NAME, currentItem.getTitle());
     bundle.putString(GlobalValue.KEY_ITEM_IMAGE, currentItem.getImage());
+
     bundle.putString(GlobalValue.KEY_USERNAME, currentItem.getOwnerUsername());
-    bundle.putString(GlobalValue.KEY_USER_ID, currentItem.getOwnerId());
+    bundle.putString(GlobalValue.KEY_USER_ID,  currentItem.getOwnerId());
+
     bundle.putString(GlobalValue.KEY_CONVERSATION_ID, conversationID);
 
     gotoActivity(self, ChatActivity.class, bundle);

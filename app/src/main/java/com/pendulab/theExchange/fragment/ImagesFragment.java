@@ -45,10 +45,10 @@ public final class ImagesFragment extends Fragment {
   private void initUI() {
     img = (ImageView) view.findViewById(R.id.image);
     if (imageUrl.equalsIgnoreCase("")) {
-      Glide.with(self).load(imageResource).into(img);
+      Glide.with(getActivity()).load(imageResource).into(img);
     } else {
       Log.i(this.getClass().getSimpleName(), imageUrl);
-      Glide.with(self).load(imageUrl).into(img);
+      Glide.with(getActivity()).load(imageUrl).into(img);
     }
   }
 

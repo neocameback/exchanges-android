@@ -208,7 +208,9 @@
   <string name="you_made_an_offer">You made an offer</string>
   <string name="sent_you_an_offer">sent you an offer</string>
   <string name="you_accepted_offer">You accepted offer</string>
+  <string name="you_rejected_offer">You rejected offer</string>
   <string name="accepted_your_offer">Accepted your offer</string>
+  <string name="rejected_your_offer">Rejected your offer</string>
   <string name="with">with</string>
   <string name="and_some_items">and some items</string>
 

@@ -81,6 +81,7 @@ public class OfferBuyAdapter extends BaseAdapter {
       holder.tvStatus = (TextView) v.findViewById(R.id.tvStatus);
       holder.llItem = (LinearLayout) v.findViewById(R.id.llItem);
       holder.llItemWrapper = (LinearLayout) v.findViewById(R.id.llItemWrapper);
+      holder.ivChat = (ImageView) v.findViewById(R.id.ivChat);
 
       v.setTag(holder);
     } else {
@@ -108,6 +109,14 @@ public class OfferBuyAdapter extends BaseAdapter {
       holder.tvDate.setText(offer.getDate());
       holder.tvStatus.setText(offer.getStatus() == Offer.STATUS_ACCEPTED ? act.getString(R.string.accepted) : (offer.getStatus() == Offer.STATUS_REJECT ? act.getString(R.string.rejected) : act.getString(R.string.pending)));
       holder.tvStatus.setBackgroundColor(offer.getStatus() == Offer.STATUS_ACCEPTED ? act.getResources().getColor(R.color.bg_button_view_offer) : (offer.getStatus() == Offer.STATUS_REJECT ? act.getResources().getColor(R.color.bg_button_chat) : act.getResources().getColor(R.color.orange)));
+
+      // Chat
+      holder.ivChat.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+          if (listener != null) listener.onClickChat(offer);
+        }
+      });
 
       //Check if user need to verify transaction
       if (offer.getStatus() == Offer.STATUS_ACCEPTED) {
@@ -187,7 +196,7 @@ public class OfferBuyAdapter extends BaseAdapter {
 
 
   class ViewHolder {
-    private ImageView ivUser, ivDate, ivAction;
+    private ImageView ivUser, ivDate, ivAction, ivChat;
     private TextView tvUser, tvOffer, tvDate, tvStatus;
     private LinearLayout llItem, llItemWrapper;
     private String itemId;
@@ -202,5 +211,6 @@ public class OfferBuyAdapter extends BaseAdapter {
 
     void onClickView(int position);
 
+    void onClickChat(Offer offer);
   }
 }

@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class Offer {
 
-  private String id, userID, username, avatar, itemTitle, itemID, itemImage, date, ownerID;
+  private String id, userID, username, avatar, itemTitle, itemID, itemImage, date, ownerID, ownerName;
   private int money, status, verify;
   private List<Item> arrTradeItems;
 
@@ -121,5 +121,14 @@ public class Offer {
 
   public void setVerify(int verify) {
     this.verify = verify;
+  }
+
+  public String getOwnerName() {
+    return ownerName;
+  }
+
+  public Offer setOwnerName(String ownerName) {
+    this.ownerName = ownerName;
+    return this;
   }
 }

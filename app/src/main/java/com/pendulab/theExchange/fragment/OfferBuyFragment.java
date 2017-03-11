@@ -1,6 +1,7 @@
 package com.pendulab.theExchange.fragment;
 
 import com.pendulab.theExchange.R;
+import com.pendulab.theExchange.activity.ChatActivity;
 import com.pendulab.theExchange.activity.VerifyTransactionActivity;
 import com.pendulab.theExchange.adapter.OfferBuyAdapter;
 import com.pendulab.theExchange.base.BaseActivity;
@@ -106,6 +107,11 @@ public class OfferBuyFragment extends BaseFragment implements View.OnClickListen
           }
         });
         return;
+      }
+
+      @Override
+      public void onClickChat(Offer offer) {
+        getConversation(offer);
       }
     });
 
@@ -245,5 +251,52 @@ public class OfferBuyFragment extends BaseFragment implements View.OnClickListen
       }
     }, params);
     asyncPost.execute(WebServiceConfig.URL_REQUEST_VERIFY_TRANSACTION);
+  }
+
+  private void getConversation(final Offer offer) {
+    String itemID = offer.getItemID();
+    if (itemID == null) {
+      return;
+    }
+
+    List<NameValuePair> params = ParameterFactory.createMakeConversationParam(itemID);
+
+    AsyncHttpPost asyncPost = new AsyncHttpPost(self, getBaseActivity().myAccount.getToken(), new AsyncHttpResponse() {
+      @Override
+      public void before() {
+        DialogUtility.showProgressDialog(self);
+      }
+
+      @Override
+      public void after(int statusCode, String response) {
+        DialogUtility.closeProgressDialog();
+        getBaseActivity().parseResponseStatus(statusCode, response, new BaseActivity.NetBaseListener() {
+          @Override
+          public void onRequestSuccess(String json) {
+            String conversationID = CommonParser.getConversationIDFromJson(json);
+            gotoChatActivity(conversationID, offer);
+          }
+
+          @Override
+          public void onRequestError(int message) {
+            getBaseActivity()._onRequestError(message);
+          }
+        });
+      }
+    }, params);
+
+    asyncPost.execute(WebServiceConfig.URL_MAKE_CONVERSATION);
+  }
+
+  private void gotoChatActivity(String conversationID, Offer offer) {
+    Bundle bundle = new Bundle();
+    bundle.putString(GlobalValue.KEY_ITEM_ID, offer.getItemID());
+    bundle.putString(GlobalValue.KEY_ITEM_NAME, offer.getItemTitle());
+    bundle.putString(GlobalValue.KEY_ITEM_IMAGE, offer.getItemImage());
+    bundle.putString(GlobalValue.KEY_USERNAME, offer.getOwnerName());
+    bundle.putString(GlobalValue.KEY_USER_ID, offer.getOwnerID());
+    bundle.putString(GlobalValue.KEY_CONVERSATION_ID, conversationID);
+
+    gotoActivity(self, ChatActivity.class, bundle);
   }
 }

@@ -177,6 +177,15 @@ public class ActivityFeedAdapter2 extends BaseAdapter {
         }
       }
 
+      //if the message is reject offer message
+      else if (messageItem.getMessage().equalsIgnoreCase("reject_offer")) {
+        if (messageItem.getUserSend().equalsIgnoreCase(((BaseActivity) activity).myAccount.getUserID())) {
+          holder.tvLastMessage.setText(activity.getString(R.string.you_rejected_offer));
+        } else {
+          holder.tvLastMessage.setText(messageItem.getUsername() + " " + activity.getString(R.string.rejected_your_offer));
+        }
+      }
+
       //or just a normal text message
       else {
         holder.tvLastMessage.setText(messageItem.getMessage());

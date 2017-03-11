@@ -645,6 +645,7 @@ public class CommonParser {
         offer.setVerify(getIntValue(obj, "verify"));
         offer.setItemID(getStringValue(obj, "item_id"));
         offer.setItemTitle(getStringValue(obj, "title"));
+        offer.setOwnerName(getStringValue(obj, "owner_name"));
         offer.setItemImage(WebServiceConfig.ITEM_IMAGE_PREFIX + getStringValue(obj, "image"));
 
         if (isJsonArray(obj, "trade_item")) {

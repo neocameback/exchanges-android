@@ -8,6 +8,7 @@ import com.pendulab.theExchange.config.GlobalValue;
 import com.pendulab.theExchange.config.WebServiceConfig;
 import com.pendulab.theExchange.database.DatabaseHelper;
 import com.pendulab.theExchange.model.Account;
+import com.pendulab.theExchange.model.Item;
 import com.pendulab.theExchange.model.Message;
 import com.pendulab.theExchange.net.AsyncHttpGet;
 import com.pendulab.theExchange.net.AsyncHttpPost;
@@ -18,6 +19,7 @@ import com.pendulab.theExchange.utils.ParameterFactory;
 
 import org.apache.http.NameValuePair;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;

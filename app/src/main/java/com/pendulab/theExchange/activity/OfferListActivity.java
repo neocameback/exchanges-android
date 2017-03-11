@@ -439,7 +439,7 @@ public class OfferListActivity extends BaseActivity {
     asyncPost.execute(WebServiceConfig.URL_REQUEST_VERIFY_TRANSACTION);
   }
 
-  private void getConversation(Offer offer) {
+  private void getConversation(final Offer offer) {
     String itemID = offer.getItemID();
     if (itemID == null) {
       return;
@@ -460,7 +460,7 @@ public class OfferListActivity extends BaseActivity {
           @Override
           public void onRequestSuccess(String json) {
             String conversationID = CommonParser.getConversationIDFromJson(json);
-            gotoChatActivity(conversationID);
+            gotoChatActivity(conversationID, offer);
           }
 
           @Override
@@ -474,13 +474,20 @@ public class OfferListActivity extends BaseActivity {
     asyncPost.execute(WebServiceConfig.URL_MAKE_CONVERSATION);
   }
 
-  private void gotoChatActivity(String conversationID) {
+  private void gotoChatActivity(String conversationID, Offer offer) {
     Bundle bundle = new Bundle();
     bundle.putString(GlobalValue.KEY_ITEM_ID, currentItem.getId());
     bundle.putString(GlobalValue.KEY_ITEM_NAME, currentItem.getTitle());
     bundle.putString(GlobalValue.KEY_ITEM_IMAGE, currentItem.getImage());
-    bundle.putString(GlobalValue.KEY_USERNAME, currentItem.getOwnerUsername());
-    bundle.putString(GlobalValue.KEY_USER_ID, currentItem.getOwnerId());
+
+    if (myAccount.getUserID().equals(currentItem.getOwnerId())) { // User selling item
+      bundle.putString(GlobalValue.KEY_USERNAME, offer.getUsername());
+      bundle.putString(GlobalValue.KEY_USER_ID, offer.getUserID());
+    } else { // User buying item
+      bundle.putString(GlobalValue.KEY_USERNAME, offer.getOwnerName());
+      bundle.putString(GlobalValue.KEY_USER_ID, offer.getOwnerID());
+    }
+
     bundle.putString(GlobalValue.KEY_CONVERSATION_ID, conversationID);
 
     gotoActivity(self, ChatActivity.class, bundle);
