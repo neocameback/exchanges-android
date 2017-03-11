@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rlBrowseOptions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+  <ViewStub
+      android:id="@+id/vsLike"
+      style="@style/Layout.FillWidthHeight"
+      android:inflatedId="@+id/infLike"
+      android:visibility="gone"
+      android:layout="@layout/panel_item_details_like"/>
+
+  <ViewStub
+      android:id="@+id/vsComment"
+      style="@style/Layout.FillWidthHeight"
+      android:inflatedId="@+id/infComment"
+      android:visibility="gone"
+      android:layout="@layout/panel_item_details_comment"/>
+
+  <ViewStub
+      android:id="@+id/vsReport"
+      style="@style/Layout.FillWidthHeight"
+      android:inflatedId="@+id/infReport"
+      android:visibility="gone"
+      android:layout="@layout/panel_item_details_report"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      style="@style/Layout.WrapWidthHeight"
+      android:layout_marginTop="@dimen/margin_padding_normal"
+      android:layout_marginBottom="@dimen/margin_padding_normal"
+      android:layout_marginLeft="@dimen/margin_padding_normal"
+      android:textColor="@color/app_primary_text_color"
+      android:text="@string/select_credit_pack"
+      android:textSize="@dimen/text_size_large"/>
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/swipeRefreshLayout"
+      style="@style/Layout.Weight.Height"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+    <ListView
+        android:id="@+id/lvCreditPack"
+        style="@style/Layout.FillWidth"
+        android:divider="@color/item_border"
+        android:dividerHeight="@dimen/border_width_very_tiny"/>
+
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/rlBottom"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_marginTop="@dimen/margin_padding_small"
+                  android:background="@color/white"
+                  android:orientation="vertical">
+
+    <View
+        android:id="@+id/viewSeparator1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_small"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/llItem"
+        android:background="@drawable/bg_view_shader_bottom"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaBoldTextView
+        android:id="@+id/tvYourCredit"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/margin_padding_small"
+        android:paddingBottom="@dimen/margin_padding_xxsmall"
+        android:paddingTop="@dimen/margin_padding_xxsmall"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_large"/>
+
+  </RelativeLayout>
+</LinearLayout>

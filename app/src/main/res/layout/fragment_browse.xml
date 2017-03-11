@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:background="@color/app_background_layer"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_padding_tiny">
+
+  <com.etsy.android.grid.StaggeredGridView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                           android:id="@+id/gvCategory"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:layout_margin="@dimen/margin_padding_small"
+                                           app:column_count="@integer/grid_column_count"
+                                           app:item_margin="@dimen/margin_padding_small"/>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:paddingBottom="@dimen/margin_padding_small"
+              android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:orientation="vertical"
+      android:layout_toLeftOf="@+id/llPurchase"
+      android:paddingBottom="@dimen/margin_padding_small"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+
+      <com.pendulab.theExchange.widget.CircularImageView
+          android:id="@+id/senderPicture"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="bottom"
+          android:src="@drawable/ic_launcher"
+          android:layout_marginBottom="8dp"
+          android:layout_marginRight="-24dp"
+          app:border="true"
+          app:border_color="#888888"
+          app:border_width="0dp"
+          app:shadow="false"/>
+
+      <LinearLayout
+          android:id="@+id/llBubble"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:background="@drawable/bg_message_in_selector"
+          android:orientation="vertical">
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            android:id="@+id/message_text"
+            android:textSize="@dimen/text_size_xnormal"
+            android:layout_marginLeft="@dimen/margin_padding_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hhhh what is that man i thinks u have to change those chat bubles they are beautiful but as you see there's a problem with sit's size"
+            android:textColor="@color/app_primary_text_color"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/button_size_xxlarge"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:layout_height="@dimen/button_size_xxlarge">
+
+          <ImageView
+              android:id="@+id/imageFile"
+              android:layout_width="@dimen/button_size_xxlarge"
+              android:layout_height="@dimen/button_size_xxlarge"
+              android:adjustViewBounds="true"
+              android:background="@color/white"
+              android:padding="@dimen/margin_padding_very_tiny"
+              android:scaleType="centerCrop"/>
+
+          <View
+              android:id="@+id/viewTransparent"
+              android:layout_width="@dimen/button_size_xxlarge"
+              android:background="@color/white_transparent_70"
+              android:layout_height="@dimen/button_size_xxlarge"/>
+
+          <View
+              android:id="@+id/viewDark"
+              android:layout_width="@dimen/button_size_xxlarge"
+              android:background="@color/black_transparent_70"
+              android:layout_height="@dimen/button_size_xxlarge"/>
+
+          <ProgressBar
+              android:id="@+id/pbLoading"
+              android:layout_centerInParent="true"
+              android:layout_width="@dimen/button_size_normal"
+              android:layout_height="@dimen/button_size_normal"/>
+        </RelativeLayout>
+        <!--media player -->
+
+        <LinearLayout
+            android:id="@+id/audioLayout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+            <!-- Play Button -->
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@null"/>
+
+            <SeekBar
+                android:id="@+id/songProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+
+
+          </LinearLayout>
+          <!-- Timer Display -->
+          <LinearLayout
+              android:id="@+id/timerDisplay"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@id/songProgressBar"
+
+          >
+            <!-- Current Duration Label -->
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+                android:id="@+id/songCurrentDurationLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <!-- Total Duration Label -->
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+                android:id="@+id/songTotalDurationLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/app_primary_text_color"
+                android:textStyle="bold"/>
+          </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvDatetime"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginLeft="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-8dp"
+        android:text="123456"
+        android:textColor="@color/app_secondary_text_color"
+        android:visibility="visible"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/llPurchase"
+      style="@style/Layout.WrapWidthHeight.Vertical"
+      android:gravity="center"
+      android:visibility="gone"
+      android:paddingBottom="@dimen/margin_padding_small"
+      android:layout_marginBottom="@dimen/margin_padding_small"
+      android:layout_marginLeft="@dimen/margin_padding_small"
+      android:layout_centerInParent="true"
+      android:layout_alignParentRight="true">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_primary_text_color"
+        android:text="10 credits"
+        android:textSize="@dimen/text_size_large"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_padding_tiny"
+        android:textColor="@color/white"
+        android:background="@color/app_primary_color"
+        android:textSize="@dimen/text_size_large"/>
+
+  </LinearLayout>
+
+</LinearLayout>

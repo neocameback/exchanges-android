@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/picasso-2.5.2_707c4c27e449378b9df0635af2c95b3780d51c84/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.0.1_f0933e97572fd3f7004550fcccd895a5be1b9973/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-storage-10.0.1_4625761d1560472e71e5aa9791806783d4be5aa8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_7ed24c409887dcdaf35ec79a9d916bbfd14a534e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.0.1_078342bc807574dd632da63b832430c093d80ee8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-awareness-10.0.1_fbc91058d17ea68101e103f63a4115f9511c680c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.android.support-support-v4-24.0.0_dee96dd4afbeb7625162ebe7d63a8cf089b96c83/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_51c7222b97b2202746ca350009500e7caa897f87/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_77ff99bbc41c7cc358938d60e9ce015556f37d18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-base-10.0.1_d1cdd3b0aa2a75dd4d7deddf82ff88796b546278/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.twitter.sdk.android/twitter-core/1.6.8/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e9b0e2ac6b285ed6dadb5ee122c03d6daa7afc46">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.twitter.sdk.android-twitter-core-1.6.8_41e2fd02f8891b1ef5a0b71eb7864e1adc2a0f9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.0.1_e24b0dcfa06c1de99707a9c25077b711294ac26a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.0.1_efb3426689ee740d47c7842a133b0e6feb7c67a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-iid-10.0.1_c87549862088f72b77a7059b6bf705e884076e5b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.0.1_6429b93025ac78c097e57d1b97076de7a05b33d9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-database-10.0.1_3b923aca333a391f23e1167f00a37c5eba74526f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-wallet-10.0.1_97f489fb2e7376504b9d0cbc66b34643998e86f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.0.1_69f82620c974f0c8b52055c51f762f725e63b0f9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="8c6ebb7d087d1a30bf84356bd2aecf85309fc024">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.melnykov-floatingactionbutton-1.3.0_cb352150ca51a42050d2b9ff59d1e015f0615441/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.0.1_b811fc46851b1e15e57353f90352623cc147d15a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="288913b440a3c61c30aa171095453a605432277a">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.rengwuxian.materialedittext-library-2.1.4_31323eb51de2e70af4845f52e25aad58dfe2f610/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_b46216e30fbfc34319d5c4a441db231ddab66f33/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.0.1_b5a40e5a9aa7b8da4bde91d0b9921257f06f3f23/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.0.1_1bce066c9b7cb97007f387ab141c6889cbe030ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-composer/1.0.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c15baca2e57ebec0f42e5924e60f615451045388">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.twitter.sdk.android-tweet-composer-1.0.5_f3c5ba7216dee822303d44c4749710316941f365/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.android.support-multidex-1.0.1_b72a9a8033ff287309d56a25101f07e0a0d99b46/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-auth-10.0.1_69b94c0c9feda85f1e31b10f8558a0e6e6ab093d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/incremental-runtime-classes/dev/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="1eb88c2f84b9e181c961ce907113e592372101d7">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/instant-run_5a7755169ebfcd147911a592904e71e9c4156109/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.0.1_fc7c8c412f2411c4ebb9be2216d1d07bd45dbacc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.0.1_e11fcfe2f034439cfa3df0044aa42eac0d188631/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.0.1_b3bffc5d13f0a0ae583279107c32e8012feae797/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.0.1_e7a97f45749945c431dcd2968d20bf8552c015bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-common-10.0.1_a6f5e1cda033d549945aa6a5cdec87eb5d3f4cad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.0.1_55f6f55fb35d2c04f6cb31a4d77db02f07dd6736/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.0.1_1dba013103b73013128241dcaa32996dcec27d08/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/libs/httpmime-4.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d34b163e52a9727101aced60775d51c5085390a1">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/2/httpmime-4.1.1_340bfb316b336dd0116821eecb5b0084e7129186/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.0.1_403d865598823ea5f89e120469d52326fcf8f52d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.0.1_6a75d883971bff020c7bcbe7845940b3eebd7166/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-10.0.1_a02977bdb6556ce3e173eae511e6aaa013496bee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.0.1_840f1b5e0335d8d3bdec4a9ad5dd342e1dce9e55/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/gson-2.3_03225fbc60981b22c2d171cc40b290755ec0832e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.0.1_67ef654aaf46bf04154dc3c942d7e8fd23db1b9a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/io.fabric.sdk.android/fabric/1.3.12/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="3575e73a22dce98f0bdbcdb475ef55a84606a9a6">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/io.fabric.sdk.android-fabric-1.3.12_70b3826f28b8e2592ce0df0eff1bd3cd0b9f4a5c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-games-10.0.1_a122751f558b65c5dd87bef53e320f6c12d8ba85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-panorama-10.0.1_6d7ffdfce705e3b339877b840de4feb9b6a42f53/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.soundcloud.android/android-crop/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="11a65cf2b30c192b38a881d626fa771a78a2293d">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.soundcloud.android-android-crop-1.0.1_481bb14208bb285b516a545545e7f9de1630e95d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-messaging-10.0.1_5b4966d0f53001f26f99bf73d1a8c19da75e8247/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_58c47ff2213221fe24614b6601c523b735678a6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-crash-10.0.1_ecbf5f48ff9fb52e458ed83113aa0ed499f46f32/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/library-2.4.0_9e80ad0659b9bb1eb6979ff0199b1f8ec36d08cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-places-10.0.1_d2eb7766584c89e5dff27661c96eefe97e2a6020/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.0.1_fb85130ad9a50d151416388d1d5b1825de03f6d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.0.1_b42844cb210a5f15882a0fd65830de43617da661/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.0.1_3a17809b3a0df36e6afe88185b40718121458290/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/libs/glide-3.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="a7537446a030da8eb0da4c71424d16c2589f6c4a">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/2/glide-3.6.0_7fdbc0cc38fbe64200e1bd550d574d5840313abc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/libs/mint-4.0.8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="19452a9f6424ddae60c51f97e93cb9bec3dddfd2">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/2/mint-4.0.8_8022e7dfefdbd649ea8004f98764a01830954106/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-vision-10.0.1_595ab56d99d5fe77202a98f744878e99ea76eaf7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.0.1_7dd5f25da58a7674510253d0d1bf793dbf856705/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.android.support-design-23.4.0_8d6e412ebf844424b4b807f29a5b286ebbd09592/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/internal_impl-24.0.0_a36c1ce77e8c87b6abafec24694ab1b0c8c8c6b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-location-10.0.1_d52d88ec96ffb5abd98e96f7627f390995cd053e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-config-10.0.1_0f372583ab45e6e807680929a3f3a4b8eb2767c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.0.1_855a59dea7d98b5108a5706c0e89951bc3904a5e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.0.1_783ad50612e9d1ea9b2dbb21d8aa73b391f773f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.0.1_48f66116fab801a8d87a6f7bf60b716be660ca33/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/incremental-classes/dev/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="9add9369c539b652cd70467d790548bb3a123fe0">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/instant-run-bootstrap_da0a7973c25354f450a6177761a833deb9de93ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/.gradle/caches/modules-2/files-2.1/com.twitter/twitter-text/1.13.0/78415b95ae3184c5926d593feab64bfc0b73b2dd/twitter-text-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="78415b95ae3184c5926d593feab64bfc0b73b2dd">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/twitter-text-1.13.0_8db3d400d69333f482d4f24ad1c0e29c9333347c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.8.0/a517f29ed06be2b2879524fcd94b6e9b36e2e0b5/retrofit-1.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="a517f29ed06be2b2879524fcd94b6e9b36e2e0b5">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/retrofit-1.8.0_e63a61844583af7720ccd2d8fc06e1a05c3ddccf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.mikepenz/iconics/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b5293d036c23b7a5046f86ee04932a12f76830e2">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.mikepenz-iconics-1.0.1_9423bd4590151b9a2c3f06751d86e7d3242c9633/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_ac5153fa2b339ed603050b47eae47a949063a977/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.0.1_93570be3e1301af9a8a57cf7a33dcba2ec4fac00/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.0.1_de26172df55c29bba3f99b9912e067aeb1bb0105/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_e6ad0d461deb9b75b604218c993188d64b1a8e21/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.0.1_9b566f7869d224eeba8d209b8317b662509726eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.0.1_d66849c077ddb877c8738fbcdce7d2ffa521c065/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/exchange-android-app/facebookSDK/unspecified/jars/libs/bolts-android-1.1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="d7b469c3daeb365261419cebcc3d8ef2ad31b00e">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/8/bolts-android-1.1.2_06a50caa24b99830f9fd4c88954f9f6884a8b93c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/work/android/android-studio-sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/support-annotations-24.0.0_e5fb112478d442a40177ea6820b1c037a134bcb1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/libs/activeandroid-custom.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="823d69ba0343962fa558ab537243867318804337">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/2/activeandroid-custom_6ec0cc42c630977b10f1817dbc6a870500c89032/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="21.1.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/samuel/svn/expandvn/exchange-android-app/app/build/intermediates/transforms/dex/dev/debug/folders/1000/10/internal_impl-24.0.0_eb53d539ad0486e5a3849ab9e41e7b27d8a4a4d6/classes.dex" />
+    </item>
+
+</items>

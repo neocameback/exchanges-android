@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.pendulab.theExchange">
+
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+  <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+
+  <!-- GCM -->
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+  <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+
+  <permission
+      android:name="com.pendulab.theExchange.permission.C2D_MESSAGE"
+      android:protectionLevel="signature"/>
+
+  <uses-permission android:name="com.pendulab.inkblot.permission.C2D_MESSAGE"/>
+
+  <!-- In-app purchase -->
+  <uses-permission android:name="com.android.vending.BILLING"/>
+
+  <application
+      android:name="com.pendulab.theExchange.base.BaseApplication"
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name">
+
+    <meta-data
+        android:name="AA_DB_NAME"
+        android:value="Inkblot.db"/>
+    <meta-data
+        android:name="AA_DB_VERSION"
+        android:value="1"/>
+
+    <meta-data
+        android:name="AA_MODELS"
+        android:value="com.pendulab.theExchange.model.Message, com.pendulab.theExchange.model.SearchKeyword"/>
+
+    <receiver
+        android:name="com.pendulab.theExchange.service.GcmBroadcastReceiver"
+        android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+
+        <category android:name="com.pendulab.inkblot.receive"/>
+      </intent-filter>
+    </receiver>
+
+    <service android:name="com.pendulab.theExchange.service.GcmIntentService"/>
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/facebook_app_id"/>
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version"/>
+
+    <!--map-->
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="@string/google_api_key"/>
+
+    <!-- in app purchase -->
+
+    <service android:name="com.pendulab.theExchange.inapppurchase.BillingService"/>
+
+    <receiver android:name="com.pendulab.theExchange.inapppurchase.BillingReceiver">
+      <intent-filter>
+        <action android:name="com.android.vending.billing.IN_APP_NOTIFY"/>
+        <action android:name="com.android.vending.billing.RESPONSE_CODE"/>
+        <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.StartActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <activity
+        android:name="com.facebook.LoginActivity"
+        android:label="Login"
+        android:screenOrientation="fullUser"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.HomeActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomTheme">
+    </activity>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.LoginActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.RegisterActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.RegisterSocialActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.VerifyAccountActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.ForgotPasswordActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.AddListingActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomTheme"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.ItemBrowsingActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomTheme"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.ItemDetailsActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomTheme"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.UserProfileActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.InventoryActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.WishlistActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.WishListManualActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.EditProfileActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.ChatActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.InboxActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.ArchiveActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.OfferActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.OfferListActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.VerifyTransactionActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.RateSellerActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.AllOfferActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.TransactionHistoryActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.FindAndInviteActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.FindUserActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.SettingsActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.ChangePasswordActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.GetCreditActivity"
+        android:screenOrientation="fullUser"
+        android:theme="@style/CustomActionBar"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.TutorialItemBrowsingActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/CustomTheme"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity
+        android:name="com.pendulab.theExchange.activity.TutorialItemDetailsActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/CustomTheme"
+        android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+
+    <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+
+
+    <!-- Paypal activity -->
+    <service
+        android:name="com.paypal.android.sdk.payments.PayPalService"
+        android:exported="false"/>
+
+    <activity android:name="com.paypal.android.sdk.payments.PaymentActivity"/>
+    <activity android:name="com.paypal.android.sdk.payments.LoginActivity"/>
+    <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"/>
+    <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"/>
+    <activity
+        android:name="io.card.payment.CardIOActivity"
+        android:configChanges="keyboardHidden|orientation"/>
+    <activity android:name="io.card.payment.DataEntryActivity"/>
+
+  </application>
+
+</manifest>

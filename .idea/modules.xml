@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MaterialDrawerLib/MaterialDrawerLib.iml" filepath="$PROJECT_DIR$/MaterialDrawerLib/MaterialDrawerLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etsyStaggeredGridLib/etsyStaggeredGridLib.iml" filepath="$PROJECT_DIR$/etsyStaggeredGridLib/etsyStaggeredGridLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exchanges-android.iml" filepath="$PROJECT_DIR$/exchanges-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebookSDK/facebookSDK.iml" filepath="$PROJECT_DIR$/facebookSDK/facebookSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libAndroidSlidingUpPanel/libAndroidSlidingUpPanel.iml" filepath="$PROJECT_DIR$/libAndroidSlidingUpPanel/libAndroidSlidingUpPanel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libColorRating/libColorRating.iml" filepath="$PROJECT_DIR$/libColorRating/libColorRating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libMaterialEditText/libMaterialEditText.iml" filepath="$PROJECT_DIR$/libMaterialEditText/libMaterialEditText.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libMaterialShowcase/libMaterialShowcase.iml" filepath="$PROJECT_DIR$/libMaterialShowcase/libMaterialShowcase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libObservableScrollView/libObservableScrollView.iml" filepath="$PROJECT_DIR$/libObservableScrollView/libObservableScrollView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libRangebar/libRangebar.iml" filepath="$PROJECT_DIR$/libRangebar/libRangebar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryQuickReturn/libraryQuickReturn.iml" filepath="$PROJECT_DIR$/libraryQuickReturn/libraryQuickReturn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pageSlidingTabStripLib/pageSlidingTabStripLib.iml" filepath="$PROJECT_DIR$/pageSlidingTabStripLib/pageSlidingTabStripLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssmoothProgressBarLibrary/ssmoothProgressBarLibrary.iml" filepath="$PROJECT_DIR$/ssmoothProgressBarLibrary/ssmoothProgressBarLibrary.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    style="@style/Layout.FillWidthHeight">
+
+  <com.baoyz.swipemenulistview.SwipeMenuListView
+      android:id="@+id/lvInbox"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:divider="@color/item_border"
+      android:dividerHeight="@dimen/border_width_very_tiny"/>
+
+</android.support.v4.widget.SwipeRefreshLayout>

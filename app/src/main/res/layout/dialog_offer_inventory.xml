@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:padding="@dimen/margin_padding_small"
+                android:layout_height="match_parent">
+
+  <ListView
+      android:id="@+id/lvInventory"
+      android:layout_above="@+id/tvOk"
+      android:layout_marginBottom="@dimen/margin_padding_normal"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/tvCancel"
+      style="@style/Layout.FillWidth"
+      android:padding="@dimen/margin_padding_xsmall"
+      android:gravity="center"
+      android:layout_toLeftOf="@+id/viewSeparator"
+      android:layout_gravity="center"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/btn_grey_selector"
+      android:text="@string/text_btn_cancel"
+      android:textColor="@color/app_third_text_color"
+      android:textSize="@dimen/text_size_xxnormal"/>
+
+  <View
+      android:id="@+id/viewSeparator"
+      android:layout_alignParentBottom="true"
+      android:layout_centerInParent="true"
+      android:layout_width="@dimen/margin_padding_small"
+      android:layout_height="1dp"/>
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/tvOk"
+      style="@style/Layout.FillWidth"
+      android:padding="@dimen/margin_padding_xsmall"
+      android:gravity="center"
+      android:layout_toRightOf="@+id/viewSeparator"
+      android:layout_gravity="center"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/btn_green_selector"
+      android:text="@string/text_btn_ok"
+      android:textColor="@color/app_third_text_color"
+      android:textSize="@dimen/text_size_xxnormal"/>
+
+</RelativeLayout>

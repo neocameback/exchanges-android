@@ -1,0 +1,74 @@
+<resources>
+
+  <!--res/drawable-xhdpi/  (720x1280 - Samsung S3, Micromax Canvas HD etc (sw-360dp))-->
+
+
+  <bool name="isTablet">false</bool>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="text_size_title_signup_login">36sp</dimen>
+  <dimen name="header_height">45dp</dimen>
+  <!-- Text Size -->
+  <dimen name="text_size_tiny">4sp</dimen>
+  <dimen name="text_size_xtiny">6sp</dimen>
+  <dimen name="text_size_xxtiny">8sp</dimen>
+  <dimen name="text_size_small">9sp</dimen>
+  <dimen name="text_size_xsmall">10sp</dimen>
+  <dimen name="text_size_xxsmall">11sp</dimen>
+  <dimen name="text_size_normal">12sp</dimen>
+  <dimen name="text_size_xnormal">13sp</dimen>
+  <dimen name="text_size_xxnormal">15sp</dimen>
+  <dimen name="text_size_large">16sp</dimen>
+  <dimen name="text_size_xlarge">18sp</dimen>
+  <dimen name="text_size_xllarge">19sp</dimen>
+  <dimen name="text_size_xxlarge">20sp</dimen>
+  <dimen name="text_size_huge">22sp</dimen>
+  <dimen name="text_size_xhuge">24sp</dimen>
+  <dimen name="text_size_xxhuge">26sp</dimen>
+  <dimen name="text_size_xxxhuge">28sp</dimen>
+
+  <dimen name="text_size_category_first">11sp</dimen>
+  <dimen name="text_size_category_second">10sp</dimen>
+
+  <!-- Margin & padding -->
+  <dimen name="margin_padding_very_tiny">2dp</dimen>
+  <dimen name="margin_padding_tiny">4dp</dimen>
+  <dimen name="margin_padding_xtiny">6dp</dimen>
+  <dimen name="margin_padding_xxtiny">8dp</dimen>
+  <dimen name="margin_padding_small">10dp</dimen>
+  <dimen name="margin_padding_xsmall">12dp</dimen>
+  <dimen name="margin_padding_xxsmall">14dp</dimen>
+  <dimen name="margin_padding_normal">16dp</dimen>
+  <dimen name="margin_padding_xnormal">18dp</dimen>
+  <dimen name="margin_padding_xxnormal">20dp</dimen>
+  <dimen name="margin_padding_large">22dp</dimen>
+  <dimen name="margin_padding_xlarge">24dp</dimen>
+  <dimen name="margin_padding_xxlarge">26dp</dimen>
+  <dimen name="margin_padding_xxxlarge">28dp</dimen>
+  <dimen name="margin_padding_huge">36dp</dimen>
+  <dimen name="margin_padding_xhuge">45dp</dimen>
+  <dimen name="margin_padding_xxhuge">60dp</dimen>
+
+
+  <dimen name="button_size_tiny">10dp</dimen>
+  <dimen name="button_size_xtiny">15dp</dimen>
+  <dimen name="button_size_xxtiny">18dp</dimen>
+  <dimen name="button_size_small">20dp</dimen>
+  <dimen name="button_size_xsmall">25dp</dimen>
+  <dimen name="button_size_normal">30dp</dimen>
+  <dimen name="button_size_lnormal">35dp</dimen>
+  <dimen name="button_size_xnormal">40dp</dimen>
+  <dimen name="button_size_xxnormal">45dp</dimen>
+  <dimen name="button_size_large">50dp</dimen>
+  <dimen name="button_size_xlarge">60dp</dimen>
+  <dimen name="button_size_xxlarge">70dp</dimen>
+  <dimen name="button_size_huge">80dp</dimen>
+  <dimen name="button_size_xhuge">90dp</dimen>
+  <dimen name="button_size_xxhuge">100dp</dimen>
+  <dimen name="button_summit_width">60dp</dimen>
+  <dimen name="button_summit_height">30dp</dimen>
+
+  <dimen name="border_width_tiny">1dp</dimen>
+
+</resources>

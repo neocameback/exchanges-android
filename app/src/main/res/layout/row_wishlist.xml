@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingTop="@dimen/margin_padding_xxsmall"
+                android:paddingBottom="@dimen/margin_padding_xxsmall"
+                android:layout_height="match_parent">
+
+  <ImageView
+      android:id="@+id/ivItem"
+      android:layout_width="@dimen/button_size_xxnormal"
+      android:layout_height="@dimen/button_size_xxnormal"
+      android:layout_alignParentLeft="true"
+      android:layout_centerInParent="true"
+      android:layout_marginRight="@dimen/margin_padding_xxsmall"/>
+
+  <RelativeLayout
+      style="@style/Layout.FillWidth"
+      android:layout_toRightOf="@+id/ivItem"
+      android:layout_centerInParent="true"
+      android:layout_toLeftOf="@+id/ivAction">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvItem"
+        style="@style/Layout.FillWidth"
+        android:background="@drawable/bg_white_selector"
+        android:layout_marginBottom="@dimen/margin_padding_small"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/tvGone"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvGone"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_padding_small"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/margin_padding_tiny"
+        android:paddingRight="@dimen/margin_padding_tiny"
+        android:paddingTop="@dimen/margin_padding_very_tiny"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/margin_padding_very_tiny"
+        android:background="@color/red"
+        android:text="@string/gone"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <com.pendulab.theExchange.widget.CircularImageView
+        android:id="@+id/ivUser"
+        android:layout_width="@dimen/button_size_small"
+        android:layout_height="@dimen/button_size_small"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/margin_padding_tiny"
+        android:layout_below="@+id/tvItem"
+        android:background="@color/transparent"
+        app:border="false"
+        app:shadow="false"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvUsername"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_toRightOf="@+id/ivUser"
+        android:layout_below="@+id/tvItem"
+        android:background="@drawable/bg_white_selector"
+        android:textColor="@color/app_secondary_text_color"
+        android:textSize="@dimen/text_size_xnormal"/>
+
+
+    <ImageView
+        android:id="@+id/ivDate"
+        android:layout_width="@dimen/button_size_small"
+        android:layout_height="@dimen/button_size_small"
+        android:layout_toLeftOf="@+id/tvDate"
+        android:layout_below="@+id/tvItem"
+        android:background="@color/transparent"
+        android:layout_marginRight="@dimen/margin_padding_tiny"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvDate"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvItem"
+        android:background="@drawable/bg_white_selector"
+        android:textSize="@dimen/text_size_xnormal"/>
+  </RelativeLayout>
+
+  <ImageView
+      android:id="@+id/ivAction"
+      android:layout_width="@dimen/button_size_normal"
+      android:layout_height="@dimen/button_size_normal"
+      android:background="@drawable/bg_white_selector"
+      android:layout_marginLeft="@dimen/margin_padding_small"
+      android:layout_alignParentRight="true"
+      android:layout_centerInParent="true"
+      android:src="@drawable/ic_action_overflow_black"/>
+</RelativeLayout>

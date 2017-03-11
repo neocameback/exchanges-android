@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      style="@style/Layout.WrapWidthHeight"
+      android:padding="@dimen/margin_padding_small"
+      android:layout_marginRight="@dimen/margin_padding_small"
+      android:textSize="@dimen/text_size_xnormal"
+      android:textColor="@color/app_third_text_color"
+      android:id="@+id/tvSuggestion"/>
+
+</LinearLayout>

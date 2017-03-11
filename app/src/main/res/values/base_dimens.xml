@@ -1,0 +1,67 @@
+<resources>
+
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+  <!-- Text Size -->
+  <dimen name="text_size_tiny">7sp</dimen>
+  <dimen name="text_size_xtiny">8sp</dimen>
+  <dimen name="text_size_xxtiny">9sp</dimen>
+  <dimen name="text_size_small">10sp</dimen>
+  <dimen name="text_size_xsmall">12sp</dimen>
+  <dimen name="text_size_xxsmall">13sp</dimen>
+  <dimen name="text_size_normal">14sp</dimen>
+  <dimen name="text_size_xnormal">16sp</dimen>
+  <dimen name="text_size_xxnormal">18sp</dimen>
+  <dimen name="text_size_large">20sp</dimen>
+  <dimen name="text_size_xlarge">22sp</dimen>
+  <dimen name="text_size_xllarge">24sp</dimen>
+  <dimen name="text_size_xxlarge">25sp</dimen>
+  <dimen name="text_size_huge">26sp</dimen>
+  <dimen name="text_size_xhuge">28sp</dimen>
+  <dimen name="text_size_xxhuge">30sp</dimen>
+  <dimen name="text_size_xxxhuge">32sp</dimen>
+
+  <dimen name="text_size_category_first">11sp</dimen>
+  <dimen name="text_size_category_second">10sp</dimen>
+
+  <!-- Margin & padding -->
+  <dimen name="margin_padding_very_tiny">1dp</dimen>
+  <dimen name="margin_padding_tiny">2dp</dimen>
+  <dimen name="margin_padding_small">5dp</dimen>
+  <dimen name="margin_padding_xsmall">8dp</dimen>
+  <dimen name="margin_padding_normal">10dp</dimen>
+  <dimen name="margin_padding_xnormal">15dp</dimen>
+  <dimen name="margin_padding_large">20dp</dimen>
+  <dimen name="margin_padding_huge">25dp</dimen>
+  <dimen name="margin_padding_xhuge">30dp</dimen>
+  <dimen name="margin_padding_xxhuge">70dp</dimen>
+
+  <dimen name="button_size_tiny">10dp</dimen>
+  <dimen name="button_size_xtiny">12dp</dimen>
+  <dimen name="button_size_xxtiny">15dp</dimen>
+  <dimen name="button_size_small">20dp</dimen>
+  <dimen name="button_size_xsmall">25dp</dimen>
+  <dimen name="button_size_normal">30dp</dimen>
+  <dimen name="button_size_lnormal">35dp</dimen>
+  <dimen name="button_size_xnormal">40dp</dimen>
+  <dimen name="button_size_xxnormal">45dp</dimen>
+  <dimen name="button_size_large">50dp</dimen>
+  <dimen name="button_size_xlarge">60dp</dimen>
+  <dimen name="button_size_xxlarge">70dp</dimen>
+  <dimen name="button_size_huge">80dp</dimen>
+  <dimen name="button_size_xhuge">90dp</dimen>
+  <dimen name="button_size_xxhuge">100dp</dimen>
+  <dimen name="button_summit_width">50dp</dimen>
+  <dimen name="button_summit_height">25dp</dimen>
+
+  <dimen name="border_width_very_tiny">0.5dp</dimen>
+  <dimen name="border_width_tiny">1dp</dimen>
+  <dimen name="border_width_xtiny">1.5dp</dimen>
+  <dimen name="border_width_small">2dp</dimen>
+  <dimen name="border_width_xsmall">2.5dp</dimen>
+  <dimen name="border_width_normal">3dp</dimen>
+
+</resources>

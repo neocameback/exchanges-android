@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical">
+
+  <LinearLayout
+      style="@style/Layout.FillWidth.Vertical"
+      android:padding="@dimen/margin_padding_small">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:gravity="center_horizontal"
+        android:text="@string/find_user_on_the_exchange"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_small"
+        android:layout_marginTop="@dimen/margin_padding_small"
+        android:background="@color/item_border"/>
+
+    <LinearLayout
+        style="@style/Layout.FillWidth.Horizontal"
+        android:layout_marginLeft="@dimen/margin_padding_xxlarge"
+        android:gravity="center_vertical">
+
+      <ImageView
+          android:id="@+id/ivSearch"
+          android:layout_width="@dimen/button_size_xnormal"
+          android:layout_height="@dimen/button_size_xnormal"
+          android:background="@drawable/bg_white_selector"
+          android:padding="@dimen/margin_padding_tiny"
+          android:src="@drawable/ic_action_search_dark"/>
+
+      <com.rengwuxian.materialedittext.MaterialEditText
+          android:id="@+id/etSearch"
+          style="@style/Layout.FillWidth"
+          android:layout_marginLeft="@dimen/margin_padding_normal"
+          android:hint="@string/search_by_username_or_name"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xxnormal"
+          app:met_floatingLabel="none"/>
+
+    </LinearLayout>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_marginTop="@dimen/margin_padding_xxlarge"
+        android:gravity="center_horizontal"
+        android:text="@string/invite_friends"
+        android:textAllCaps="true"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_small"
+        android:layout_marginTop="@dimen/margin_padding_small"
+        android:background="@color/item_border"/>
+
+    <LinearLayout
+        android:id="@+id/llFacebook"
+        style="@style/Layout.FillWidth.Horizontal"
+        android:layout_marginLeft="@dimen/margin_padding_normal"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:background="@drawable/bg_white_selector"
+        android:gravity="center_vertical">
+
+      <ImageView
+          android:id="@+id/ivFacebook"
+          android:layout_width="@dimen/button_size_xnormal"
+          android:layout_height="@dimen/button_size_xnormal"
+          android:background="@drawable/bg_white_selector"
+          android:padding="@dimen/margin_padding_tiny"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_marginLeft="@dimen/margin_padding_normal"
+          android:gravity="center_horizontal"
+          android:text="@string/facebook"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xxnormal"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:layout_marginLeft="@dimen/margin_padding_normal"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:background="@color/item_border"/>
+
+    <LinearLayout
+        android:id="@+id/llGoogle"
+        style="@style/Layout.FillWidth.Horizontal"
+        android:layout_marginLeft="@dimen/margin_padding_normal"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:background="@drawable/bg_white_selector"
+        android:gravity="center_vertical">
+
+      <ImageView
+          android:id="@+id/ivGoogle"
+          android:layout_width="@dimen/button_size_xnormal"
+          android:layout_height="@dimen/button_size_xnormal"
+          android:background="@drawable/bg_white_selector"
+          android:padding="@dimen/margin_padding_tiny"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_marginLeft="@dimen/margin_padding_normal"
+          android:gravity="center_horizontal"
+          android:text="@string/google_plus"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xxnormal"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:layout_marginLeft="@dimen/margin_padding_normal"
+        android:background="@color/item_border"/>
+
+    <LinearLayout
+        android:id="@+id/llEmail"
+        style="@style/Layout.FillWidth.Horizontal"
+        android:layout_marginLeft="@dimen/margin_padding_normal"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:background="@drawable/bg_white_selector"
+        android:gravity="center_vertical">
+
+      <ImageView
+          android:id="@+id/ivEmail"
+          android:layout_width="@dimen/button_size_xnormal"
+          android:layout_height="@dimen/button_size_xnormal"
+          android:background="@drawable/bg_white_selector"
+          android:padding="@dimen/margin_padding_tiny"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_marginLeft="@dimen/margin_padding_normal"
+          android:gravity="center_horizontal"
+          android:text="@string/email"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xxnormal"/>
+
+    </LinearLayout>
+  </LinearLayout>
+
+</ScrollView>

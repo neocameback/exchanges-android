@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="black">#000000</color>
+  <color name="white">#ffffff</color>
+  <color name="white_pressed">#e3e3e3</color>
+  <color name="gray">#cccccc</color>
+  <color name="blue">#2871ea</color>
+  <color name="purple">#423142</color>
+  <color name="green">#25c347</color>
+  <color name="menu">#00a9df</color>
+  <color name="pumpkin">#d35400</color>
+  <color name="text">#1abc9c</color>
+  <color name="blue_sky">#3498db</color>
+  <color name="transparent">#00000000</color>
+  <color name="sea_blue">#07599a</color>
+  <color name="orange">#f78d1e</color>
+  <!--<color name="app_primary_color">#d2232A</color>-->
+  <!--<color name="app_primary_color_pressed">#DA7175</color>-->
+  <color name="app_primary_color">#3b5998</color>
+  <color name="app_primary_color_pressed">#4e6699</color>
+  <color name="app_secondary_color">#1b84c3</color>
+  <color name="app_primary_text_color">#404040</color>
+  <color name="app_secondary_text_color">#707070</color>
+  <color name="app_third_text_color">#FFFFFF</color>
+  <color name="yellow">#FFFF00</color>
+  <color name="red">#d2232A</color>
+  <color name="heavy_red">#95141a</color>
+
+  <!-- App background color -->
+  <color name="app_background_layer">#F2F2F2</color>
+  <color name="item_border">#cacaca</color>
+
+  <color name="cpb_default_color">#33b5e5</color>
+  <item name="cpb_default_sweep_speed" format="float" type="string">1</item>
+  <item name="cpb_default_rotation_speed" format="float" type="string">1</item>
+
+  <color name="white_transparent_70">#70FFFFFF</color>
+  <color name="black_transparent_70">#70000000</color>
+  <color name="black_transparent_40">#40000000</color>
+  <color name="black_transparent_20">#20000000</color>
+
+  <integer-array name="progress_colors">
+    <item>@color/app_primary_color</item>
+    <item>@color/app_primary_color</item>
+    <item>@color/app_primary_color</item>
+    <item>@color/app_primary_color</item>
+  </integer-array>
+
+  <integer-array name="search_progress_colors">
+    <item>@color/white</item>
+    <item>@color/white</item>
+    <item>@color/white</item>
+    <item>@color/white</item>
+  </integer-array>
+
+
+</resources>

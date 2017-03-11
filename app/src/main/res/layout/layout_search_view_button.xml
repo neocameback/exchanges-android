@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+  <com.pendulab.theExchange.CircularProgressBar.CircularProgressBar
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/pbLoading"
+      android:layout_width="@dimen/button_size_small"
+      android:layout_height="@dimen/button_size_small"
+      android:layout_marginRight="@dimen/margin_padding_very_tiny"
+      android:visibility="visible"
+      android:indeterminate="true"
+      app:cpb_stroke_width="@dimen/border_width_very_tiny"
+      app:cpb_colors="@array/search_progress_colors"/>
+
+  <ImageView
+      android:id="@+id/ivSearch"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:gravity="center"
+      android:visibility="gone"
+      android:src="@drawable/ic_action_search"
+      android:background="@drawable/btn_actionbar_selector"/>
+</RelativeLayout>

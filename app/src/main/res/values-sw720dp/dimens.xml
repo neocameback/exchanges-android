@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Action Bar -->
+  <dimen name="action_bar_height">160dp</dimen>
+  <dimen name="action_bar_iv_menu_size">15dp</dimen>
+  <dimen name="action_bar_btn_menu_size">40dp</dimen>
+  <dimen name="action_bar_btn_search_size">40dp</dimen>
+  <dimen name="action_bar_et_search_width">100dp</dimen>
+  <dimen name="action_bar_btn_close_size">25dp</dimen>
+
+  <integer name="grid_column_count">3</integer>
+
+  <!--Activity send request-->
+  <dimen name="avatar_size">200dp</dimen>
+  <dimen name="request_avatar_size">160dp</dimen>
+
+  <!--Activity tinder search-->
+  <dimen name="tinder_height">800dp</dimen>
+
+</resources>

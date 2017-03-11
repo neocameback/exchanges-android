@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/Layout.FillWidthHeight"
+                android:background="@drawable/bg_white_selector"
+                android:padding="@dimen/margin_padding_small">
+
+  <RelativeLayout
+      android:id="@+id/rlFeed"
+      style="@style/Layout.FillWidth"
+      android:background="@drawable/bg_white_selector">
+
+    <com.pendulab.theExchange.widget.CircularImageView
+        android:id="@+id/ivUserFeed"
+        android:layout_width="@dimen/button_size_xxnormal"
+        android:layout_height="@dimen/button_size_xxnormal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        app:border="true"
+        app:border_color="#888888"
+        app:border_width="0dp"
+        app:shadow="false"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvContentFeed"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_toLeftOf="@+id/ivItemFeed"
+        android:layout_toRightOf="@+id/ivUserFeed"
+        android:background="@drawable/bg_white_selector"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvDateFeed"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_below="@+id/tvContentFeed"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_marginTop="@dimen/margin_padding_tiny"
+        android:layout_toRightOf="@+id/ivUserFeed"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/ivItemFeed"
+        android:textColor="@color/app_secondary_text_color"
+        android:textSize="@dimen/text_size_normal"/>
+
+
+    <ImageView
+        android:id="@+id/ivItemFeed"
+        android:layout_width="@dimen/button_size_xxnormal"
+        android:layout_height="@dimen/button_size_xxnormal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/tvDateFeed"
+        android:layout_marginLeft="@dimen/margin_padding_small"/>
+
+  </RelativeLayout>
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:id="@+id/rlInbox"
+                  style="@style/Layout.FillWidthHeight">
+
+    <RelativeLayout
+        android:id="@+id/rlInfo"
+        style="@style/Layout.FillWidth"
+        android:background="@drawable/bg_white_selector">
+
+      <RelativeLayout
+          android:id="@+id/rlAvatar"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:layout_centerInParent="true">
+
+        <com.pendulab.theExchange.widget.CircularImageView
+            android:id="@+id/ivUser"
+            android:layout_width="@dimen/button_size_xxnormal"
+            android:layout_height="@dimen/button_size_xxnormal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            app:border="true"
+            app:border_color="#888888"
+            app:border_width="0dp"
+            app:shadow="false"/>
+
+        <com.pendulab.theExchange.fontWidget.NotificationTextView
+            android:id="@+id/tvUnseen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_notification_red"
+            android:gravity="center"
+            android:padding="@dimen/margin_padding_very_tiny"
+            android:textColor="@color/app_third_text_color"
+            android:textSize="@dimen/text_size_xsmall"
+            android:visibility="gone"/>
+      </RelativeLayout>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          android:id="@+id/tvName"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_alignParentTop="true"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_toLeftOf="@+id/tvDate"
+          android:layout_toRightOf="@+id/rlAvatar"
+          android:background="@drawable/bg_white_selector"
+          android:singleLine="true"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xxnormal"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaBoldTextView
+          android:id="@+id/tvItem"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_below="@+id/tvName"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_marginTop="@dimen/margin_padding_tiny"
+          android:layout_toLeftOf="@+id/ivItem"
+          android:layout_toRightOf="@+id/rlAvatar"
+          android:singleLine="true"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xxnormal"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          android:id="@+id/tvLastMessage"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_below="@+id/tvItem"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_marginTop="@dimen/margin_padding_tiny"
+          android:layout_toLeftOf="@+id/ivItem"
+          android:layout_toRightOf="@+id/rlAvatar"
+          android:singleLine="true"
+          android:textColor="@color/app_secondary_text_color"
+          android:textSize="@dimen/text_size_normal"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          android:id="@+id/tvDate"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:background="@drawable/bg_white_selector"
+          android:textColor="@color/app_secondary_text_color"
+          android:textSize="@dimen/text_size_normal"/>
+
+      <ImageView
+          android:id="@+id/ivItem"
+          android:layout_width="@dimen/button_size_xxnormal"
+          android:layout_height="@dimen/button_size_xxnormal"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/tvDate"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_marginTop="@dimen/margin_padding_tiny"/>
+
+    </RelativeLayout>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvOffer"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_below="@+id/rlInfo"
+        android:layout_marginLeft="@dimen/button_size_xxnormal"
+        android:layout_marginTop="@dimen/margin_padding_small"
+        android:background="@drawable/bg_white_selector"
+        android:paddingLeft="@dimen/margin_padding_small"
+        android:text=""
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_xnormal"/>
+
+  </RelativeLayout>
+
+</RelativeLayout>
+
+
+

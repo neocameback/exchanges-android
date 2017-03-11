@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Alert Text -->
+
+  <!--Register-->
+  <string name="username_alert">Username is required</string>
+  <string name="phonenumber_alert">Phone number is required</string>
+  <string name="password_alert">Password is required</string>
+
+  <!--Add Listing-->
+  <string name="cover_photo_alert">Cover photo is required</string>
+  <string name="category_alert">Category is required</string>
+  <string name="title_alert">Title is required</string>
+  <string name="price_alert">Price cannot be empty</string>
+  <string name="meeting_place_alert">Meeting place cannot be empty</string>
+  <string name="location_alert">Location services is not available. Go to settings and enable it
+    now?
+  </string>
+  <string name="mandatory_fields_alert">Some fields are required to make your listing to be ready.
+  </string>
+  <string name="cancel_listing_alert">Cancel your listing?</string>
+
+  <!--Item Details Activity-->
+  <string name="rate_seller_alert">You can only rate this seller everytime you complete a new
+    transaction with him/her
+  </string>
+
+  <!--Wishlist-->
+  <string name="message_alert_wishlist_title">Title is required</string>
+  <string name="message_alert_wishlist_price">Maximum price must be bigger than minimum price
+  </string>
+
+  <!--Update profile-->
+  <string name="message_alert_email_not_correct_format">Email format is not correct</string>
+
+  <!--Make offer-->
+  <string name="message_alert_offer">Atleast price or a trade item is required</string>
+
+  <!--Rate seller-->
+  <string name="message_alert_rating_zero">At least one star rating is required</string>
+  <string name="message_alert_review">Please fill in the review</string>
+
+  <!--Change password-->
+  <string name="message_alert_field_empty">This field cannot be empty</string>
+  <string name="message_alert_confirm_password_not_match">Confirmed password does not match the new
+    password
+  </string>
+
+</resources>

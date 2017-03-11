@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Action Bar -->
+  <dimen name="action_bar_height">60dp</dimen>
+  <dimen name="action_bar_iv_menu_size">15dp</dimen>
+  <dimen name="action_bar_btn_menu_size">40dp</dimen>
+  <dimen name="action_bar_btn_search_size">40dp</dimen>
+  <dimen name="action_bar_et_search_width">100dp</dimen>
+  <dimen name="action_bar_btn_close_size">25dp</dimen>
+
+  <!--Signup & login-->
+  <dimen name="signup_button_height">37.5dp</dimen>
+
+  <!--Activity send request-->
+  <dimen name="avatar_size">75dp</dimen>
+  <dimen name="request_avatar_size">60dp</dimen>
+
+  <!--Activity tinder search-->
+  <dimen name="tinder_height">300dp</dimen>
+
+</resources>

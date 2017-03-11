@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/Layout.FillWidthHeight"
+                android:background="@color/white">
+
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/Layout.FillWidthHeight"
+              android:layout_above="@+id/rlBottom"
+              android:background="@color/white"
+              android:padding="@dimen/margin_padding_normal">
+
+    <LinearLayout
+        style="@style/Layout.FillWidth"
+        android:gravity="center"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/ivAvatar"
+          android:layout_width="@dimen/button_size_xhuge"
+          android:layout_height="@dimen/button_size_xhuge"
+          android:layout_marginTop="@dimen/margin_padding_xnormal"
+          android:src="@drawable/iv_add_avatar_selector"/>
+
+      <com.rengwuxian.materialedittext.MaterialEditText
+          android:id="@+id/etUsername"
+          style="@style/Layout.FillWidth"
+          android:layout_marginTop="@dimen/margin_padding_xnormal"
+          android:hint="@string/signup_username_hint"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_large"
+          app:met_floatingLabel="highlight"/>
+
+      <com.rengwuxian.materialedittext.MaterialEditText
+          android:id="@+id/etPassword"
+          style="@style/Layout.FillWidth"
+          android:layout_marginTop="@dimen/margin_padding_small"
+          android:hint="@string/signup_password_hint"
+          android:inputType="textPassword"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_large"
+          app:met_floatingLabel="highlight"/>
+
+      <RelativeLayout
+          style="@style/Layout.FillWidth"
+          android:layout_marginTop="@dimen/margin_padding_small">
+
+        <Spinner
+            android:id="@+id/spnPhoneCode"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_width="@dimen/button_size_xxlarge"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:spinnerMode="dialog"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etPhone"
+            style="@style/Layout.FillWidth"
+            android:layout_marginLeft="@dimen/margin_padding_small"
+            android:layout_toRightOf="@+id/spnPhoneCode"
+            android:hint="@string/signup_phone_hint"
+            android:inputType="number"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_large"
+            app:met_floatingLabel="highlight"/>
+      </RelativeLayout>
+
+      <RelativeLayout
+          style="@style/Layout.FillWidth"
+          android:layout_marginTop="@dimen/margin_padding_large">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/tvSplit"
+            android:background="@color/app_primary_text_color"/>
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            android:id="@+id/tvSplit"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_padding_small"
+            android:layout_marginRight="@dimen/margin_padding_small"
+            android:layout_marginTop="@dimen/margin_padding_large"
+            android:text="@string/or_signup_with"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_large"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tvSplit"
+            android:background="@color/app_primary_text_color"/>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/rlFacebook"
+          style="@style/Layout.FillWidth"
+          android:layout_height="@dimen/button_size_xxnormal"
+          android:layout_marginTop="@dimen/margin_padding_small"
+          android:background="@drawable/btn_facebook_selector">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_normal"
+            android:layout_height="@dimen/button_size_normal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_padding_small"
+            android:src="@drawable/icon_facebook_white"/>
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_height="@dimen/button_size_xxnormal"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/margin_padding_xxsmall"
+            android:gravity="center"
+            android:text="@string/facebook"
+            android:textColor="@color/app_third_text_color"
+            android:textSize="@dimen/text_size_xlarge"/>
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/rlGoogle"
+          style="@style/Layout.FillWidth"
+          android:layout_height="@dimen/button_size_xxnormal"
+          android:layout_marginTop="@dimen/margin_padding_small"
+          android:background="@drawable/btn_google_selector">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_normal"
+            android:layout_height="@dimen/button_size_normal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/margin_padding_small"
+            android:src="@drawable/icon_google_white"/>
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_height="@dimen/button_size_xxnormal"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/margin_padding_xxsmall"
+            android:gravity="center"
+            android:text="@string/google_plus"
+            android:textColor="@color/app_third_text_color"
+            android:textSize="@dimen/text_size_xlarge"/>
+      </RelativeLayout>
+
+    </LinearLayout>
+  </ScrollView>
+
+  <include layout="@layout/layout_bottom_relative"/>
+</RelativeLayout>

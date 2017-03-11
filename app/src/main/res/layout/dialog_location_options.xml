@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_white_transparent"
+              android:orientation="vertical">
+
+  <LinearLayout style="@style/Layout.FillWidth.Vertical">
+
+    <LinearLayout style="@style/Layout.FillWidth.Horizontal"
+                  android:background="@drawable/bg_white_selector"
+                  android:padding="@dimen/margin_padding_normal"
+                  android:gravity="center"
+                  android:id="@+id/llAnywhere">
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:text="@string/anywhere"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/item_border"/>
+
+    <LinearLayout
+        android:id="@+id/llSelectLocation"
+        style="@style/Layout.FillWidth.Horizontal"
+        android:padding="@dimen/margin_padding_normal"
+        android:background="@drawable/bg_white_selector"
+        android:gravity="center">
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:text="@string/select_a_location"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

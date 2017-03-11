@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+  <ListView
+      android:id="@+id/lvUser"
+      style="@style/Layout.FillWidth"
+      android:divider="@color/item_border"
+      android:dividerHeight="@dimen/border_width_very_tiny"
+      android:layout_margin="@dimen/margin_padding_small"/>
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/tvNoResult"
+      style="@style/Layout.WrapWidthHeight"
+      android:gravity="center"
+      android:layout_centerInParent="true"
+      android:singleLine="true"
+      android:visibility="gone"
+      android:text="@string/no_user_found"
+      android:textColor="@color/app_primary_color"
+      android:textSize="@dimen/text_size_large"/>
+
+</RelativeLayout>

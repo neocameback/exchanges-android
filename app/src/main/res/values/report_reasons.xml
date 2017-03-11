@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="wrong_category">Wrong category</string>
+  <string name="counterfeit">Counterfeit/Imitation</string>
+  <string name="keyword_spam">Keyword spam</string>
+  <string name="prohibited_item">Prohibited item</string>
+  <string name="repeated_posts">Repeated posts</string>
+  <string name="promotion_abuse">Promotion abuse</string>
+  <string name="nudity">Nudity/Pornography/Mature content</string>
+  <string name="services">Services</string>
+  <string name="hateful_speech">Hateful speech/Blackmail</string>
+
+</resources>

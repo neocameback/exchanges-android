@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="activeandroid-custom">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/activeandroid-custom.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

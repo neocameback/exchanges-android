@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/Layout.FillWidth"
+                android:background="@drawable/bg_white_selector"
+                android:padding="@dimen/margin_padding_small">
+
+  <ImageView
+      android:id="@+id/ivUser"
+      android:layout_width="@dimen/button_size_xnormal"
+      android:layout_height="@dimen/button_size_xnormal"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_centerInParent="true"
+      android:src="@drawable/ic_locale_selected"/>
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaBoldTextView
+      android:id="@+id/tvName"
+      style="@style/Layout.WrapWidthHeight"
+      android:layout_alignParentTop="true"
+      android:layout_centerInParent="true"
+      android:layout_marginLeft="@dimen/margin_padding_small"
+      android:layout_toRightOf="@+id/ivUser"
+      android:background="@drawable/bg_white_selector"
+      android:textColor="@color/app_primary_text_color"
+      android:textSize="@dimen/text_size_xxnormal"/>
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/tvComment"
+      style="@style/Layout.WrapWidthHeight"
+      android:layout_centerInParent="true"
+      android:layout_marginLeft="@dimen/margin_padding_small"
+      android:layout_marginTop="@dimen/margin_padding_tiny"
+      android:layout_toRightOf="@+id/ivUser"
+      android:layout_below="@+id/tvName"
+      android:textColor="@color/app_primary_text_color"
+      android:textSize="@dimen/text_size_xnormal"/>
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/tvDate"
+      style="@style/Layout.WrapWidthHeight"
+      android:layout_centerInParent="true"
+      android:layout_marginLeft="@dimen/margin_padding_small"
+      android:layout_marginTop="@dimen/margin_padding_tiny"
+      android:layout_below="@+id/tvComment"
+      android:background="@drawable/bg_white_selector"
+      android:layout_toRightOf="@+id/ivUser"
+      android:textColor="@color/app_secondary_text_color"
+      android:textSize="@dimen/text_size_xsmall"/>
+
+</RelativeLayout>

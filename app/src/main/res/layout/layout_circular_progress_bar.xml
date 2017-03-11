@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_transparent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_padding_large"
+                android:paddingTop="@dimen/margin_padding_large">
+
+  <com.pendulab.theExchange.CircularProgressBar.CircularProgressBar
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/pb"
+      android:layout_width="@dimen/button_size_xnormal"
+      android:layout_height="@dimen/button_size_xnormal"
+      android:layout_alignParentLeft="true"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginLeft="@dimen/margin_padding_normal"
+      android:indeterminate="true"
+      app:cpb_stroke_width="@dimen/border_width_normal"
+      app:cpb_colors="@array/progress_colors"/>
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/lblMessage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:gravity="center"
+      android:text="@string/please_wait_message"
+      android:textColor="@color/app_primary_text_color"
+      android:textSize="@dimen/text_size_large"/>
+</RelativeLayout>

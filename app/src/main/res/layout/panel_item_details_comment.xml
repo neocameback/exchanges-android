@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clickable="true"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+  <RelativeLayout style="@style/Layout.FillWidth">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/button_size_xlarge"
+        android:layout_height="@dimen/button_size_xlarge"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_white_selector"
+        android:clickable="true"
+        android:onClick="onPressBack"
+        android:padding="@dimen/margin_padding_normal"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaBoldTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:text="@string/public_comments"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_large"/>
+  </RelativeLayout>
+
+  <View
+      android:id="@+id/viewSeparator"
+      style="@style/Layout.FillWidth"
+      android:layout_height="@dimen/border_width_very_tiny"
+      android:layout_below="@+id/ivBack"
+      android:background="@color/item_border"/>
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/srlComment"
+      style="@style/Layout.FillWidthHeight"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+    <ListView
+        android:id="@+id/lvComment"
+        style="@style/Layout.FillWidth"
+        android:divider="@null"
+        android:layout_marginTop="@dimen/margin_padding_small"
+        android:dividerHeight="@dimen/border_width_very_tiny"
+        android:paddingLeft="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"/>
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/border_width_small"
+      android:background="@drawable/bg_black_gradient"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:paddingTop="@dimen/margin_padding_tiny"
+      android:paddingBottom="@dimen/margin_padding_tiny"
+      android:gravity="bottom"
+      android:orientation="horizontal">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularEditText
+        android:id="@+id/etComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_padding_tiny"
+        android:maxLines="3"
+        android:textSize="@dimen/text_size_xxnormal"
+        android:inputType="textMultiLine|textCapSentences"
+        android:layout_weight="1"
+        android:hint="@string/post_a_comment"/>
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="@dimen/button_size_xnormal"
+        android:layout_height="@dimen/button_size_xnormal"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_padding_tiny"
+        android:background="@drawable/bg_white_selector"
+        android:src="@android:drawable/ic_menu_send"/>
+  </LinearLayout>
+
+
+</LinearLayout>

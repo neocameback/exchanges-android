@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rlBottom"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_alignParentLeft="true"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:paddingBottom="@dimen/margin_padding_tiny"
+      android:paddingTop="@dimen/margin_padding_tiny">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_padding_tiny"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xsmall"/>
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+      android:clickable="true"
+      android:gravity="center"
+      android:onClick="onClickDone"
+      android:orientation="horizontal"
+      android:paddingBottom="@dimen/margin_padding_tiny"
+      android:paddingTop="@dimen/margin_padding_tiny">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:text="@string/text_done"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xsmall"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_accept"/>
+  </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--Signup-->
+  <string name="error_1">Username already exists</string>
+  <string name="error_2">Phone number already exists</string>
+  <string name="error_3">Email already exists</string>
+  <string name="error_4">No data input</string>
+  <string name="error_5">Registration successful</string>
+  <string name="error_6">Registration successful but cannot download profile image</string>
+
+  <!--Login-->
+  <string name="error_7">Username is not correct</string>
+  <string name="error_8">Password is not correct</string>
+  <string name="error_9">Your account has not been activated yet</string>
+  <string name="error_10">Your account isn\'t signup yet</string>
+
+  <!--Active account-->
+  <string name="error_12">Wrong verification code</string>
+  <string name="error_13">Verification successful</string>
+  <string name="error_14">Access denied</string>
+  <string name="error_15">Reset password sucessfully</string>
+
+  <!--Item-->
+  <string name="error_16">Get items succesfully</string>
+  <string name="error_17">Add item to wishlist sucessfully</string>
+  <string name="error_18">Upload item successfully</string>
+  <string name="error_19">Update item successful</string>
+
+  <!--User-->
+  <string name="error_20">Change password sucessfully</string>
+  <string name="error_21">Update user successfully</string>
+  <string name="error_22">You cannot rate that user</string>
+  <string name="error_23">Rate user successfully</string>
+  <string name="error_24">You reported this item</string>
+  <string name="error_25">You reported this user</string>
+  <string name="error_26">Your comment has been posted</string>
+  <string name="error_27">You blocked this user</string>
+  <string name="error_28">You unblocked this user</string>
+  <string name="error_29">Your item has been deleted</string>
+
+  <string name="error_30">You are currently blocked by this user</string>
+  <string name="error_31">You don\'t have enough credit to perform this action</string>
+  <string name="error_32">Your account has been banned</string>
+  <string name="error_33">This item doesn\'t exist or has been deleted</string>
+  <string name="error_34">This offer is not accepted</string>
+  <string name="error_35">Problem occured. Please try again later</string>
+
+</resources>

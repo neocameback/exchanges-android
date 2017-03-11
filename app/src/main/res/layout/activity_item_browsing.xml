@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/panelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/rlBrowseOptions"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoParalaxOffset="100dp"
+    sothree:umanoScrollableView="@+id/rlBrowseOptions"
+    sothree:umanoShadowHeight="4dp">
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/app_background_layer"
+                  android:focusableInTouchMode="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <com.pendulab.theExchange.widget.HeaderGridView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:horizontalSpacing="@dimen/margin_padding_small"
+        android:numColumns="@integer/grid_column_count"
+        android:padding="@dimen/margin_padding_small"
+        android:scrollbarStyle="outsideOverlay"
+        android:verticalSpacing="@dimen/margin_padding_small"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvNoResult"
+        style="@style/Layout.FillWidthHeight"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:text="@string/no_item_found"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_large"/>
+
+    <!--<com.etsy.android.grid.StaggeredGridView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/gvItems"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/toolbar"-->
+    <!--app:column_count="@integer/grid_column_count"-->
+    <!--app:item_margin="@dimen/margin_padding_small" />-->
+
+
+    <include layout="@layout/layout_item_browsing_header"/>
+
+    <LinearLayout
+        android:id="@+id/llFooter"
+        style="@style/Layout.FillWidth.Vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="right">
+
+      <com.melnykov.fab.FloatingActionButton
+          android:id="@+id/btnAddListing"
+          android:layout_width="@dimen/button_size_xlarge"
+          android:layout_height="@dimen/button_size_xlarge"
+          android:layout_alignParentRight="true"
+          android:layout_centerInParent="true"
+          android:layout_marginBottom="@dimen/margin_padding_large"
+          android:layout_marginRight="@dimen/margin_padding_normal"
+          android:src="@drawable/ic_action_new"
+          app:fab_colorNormal="@color/app_primary_color"/>
+    </LinearLayout>
+
+  </RelativeLayout>
+
+  <include layout="@layout/layout_item_browsing_slider"/>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+
+

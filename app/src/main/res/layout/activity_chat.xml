@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+  <LinearLayout
+      android:id="@+id/llItem"
+      style="@style/Layout.FillWidth.Horizontal"
+      android:layout_alignParentTop="true"
+      android:gravity="center_vertical"
+      android:background="@drawable/bg_white_selector"
+      android:padding="@dimen/margin_padding_xtiny">
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="@dimen/button_size_large"
+        android:layout_height="@dimen/button_size_large"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvItem"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:gravity="center_horizontal"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+  </LinearLayout>
+
+  <View
+      android:id="@+id/viewSeparator1"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/border_width_small"
+      android:layout_below="@+id/llItem"
+      android:layout_marginBottom="@dimen/margin_padding_tiny"
+      android:background="@drawable/bg_view_shader"/>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rvMessages"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/viewSeparator"
+      android:layout_below="@+id/viewSeparator1"
+      android:divider="@color/gray"
+      android:dividerHeight="1dp"
+      android:padding="@dimen/margin_padding_xtiny"
+      android:transcriptMode="alwaysScroll"/>
+
+  <View
+      android:id="@+id/viewSeparator"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/border_width_small"
+      android:layout_above="@+id/llSendMessage"
+      android:layout_marginBottom="@dimen/margin_padding_tiny"
+      android:background="@drawable/bg_view_shader"/>
+
+  <LinearLayout
+      android:id="@+id/llSendMessage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="@dimen/margin_padding_tiny"
+      android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btnAttach"
+        android:layout_width="@dimen/button_size_xnormal"
+        android:layout_height="@dimen/button_size_xnormal"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_padding_tiny"
+        android:background="@color/app_primary_color"
+        android:src="@drawable/ic_action_new"
+        android:visibility="gone"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularEditText
+        android:id="@+id/etMessage"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_size_xnormal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_padding_tiny"
+        android:layout_weight="1"
+        android:hint="@string/type_message_hint"
+        android:textSize="@dimen/text_size_xnormal"
+        android:textColor="@color/app_primary_text_color"/>
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="@dimen/button_size_xnormal"
+        android:layout_height="@dimen/button_size_xnormal"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_padding_tiny"
+        android:background="@drawable/bg_white_selector"
+        android:src="@android:drawable/ic_menu_send"/>
+  </LinearLayout>
+
+
+</RelativeLayout>

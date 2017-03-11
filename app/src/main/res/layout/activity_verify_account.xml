@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/Layout.FillWidthHeight"
+                android:background="@color/white">
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/rlBottom"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_padding_normal">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvSplit"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_large"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/etCode"
+        style="@style/Layout.FillWidth"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:hint="@string/vefification_code_hint"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_large"
+        app:met_floatingLabel="highlight"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.FillWidth"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_marginRight="@dimen/margin_padding_small"
+        android:layout_marginTop="@dimen/margin_padding_huge"
+        android:gravity="center"
+        android:text="@string/didnt_receive_message"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_large"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvResendMessage"
+        style="@style/Layout.FillWidth"
+        android:layout_height="@dimen/button_size_xxnormal"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:background="@drawable/btn_green_selector"
+        android:gravity="center"
+        android:text="@string/resend_the_code"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_xlarge"/>
+  </LinearLayout>
+
+  <include layout="@layout/layout_bottom_relative"/>
+</RelativeLayout>

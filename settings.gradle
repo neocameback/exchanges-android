@@ -1,0 +1,3 @@
+include ':app', ':MaterialDrawerLib', ':facebookSDK', ':pageSlidingTabStripLib', ':etsyStaggeredGridLib', ':libAndroidSlidingUpPanel', ':libraryQuickReturn', ':libRangebar', ':libObservableScrollView', ':libMaterialEditText', ':libMaterialShowcase'
+include ':ssmoothProgressBarLibrary'
+include ':libColorRating'

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="bg_button_blue">#5E7AB5</color>
+  <color name="bg_button_blue_pressed">#425D9E</color>
+  <color name="bg_button_grey">#F3F5F8</color>
+  <color name="bg_button_grey_pressed">#dddee5</color>
+  <color name="bg_button_google_plus">#F24C36</color>
+  <color name="bg_button_google_plus_pressed">#DD4B39</color>
+  <color name="bg_button_green">#27AE60</color>
+  <color name="bg_button_green_pressed">#208C4D</color>
+
+  <color name="bg_button_view_offer">#27AE60</color>
+  <color name="bg_button_view_offer_pressed">#18683A</color>
+
+  <color name="bg_button_chat">#6D6E71</color>
+  <color name="bg_button_chat_pressed">#46474A</color>
+
+  <color name="bg_button_offer">#2980B9</color>
+  <color name="bg_button_offer_pressed">#194C6E</color>
+
+  <color name="map_circle_color">#300DF505</color>
+
+</resources>

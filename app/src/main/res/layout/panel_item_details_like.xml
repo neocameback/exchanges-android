@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clickable="true"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+  <RelativeLayout style="@style/Layout.FillWidth">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/button_size_xlarge"
+        android:layout_height="@dimen/button_size_xlarge"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_white_selector"
+        android:clickable="true"
+        android:onClick="onPressBack"
+        android:padding="@dimen/margin_padding_normal"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaBoldTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:text="@string/people_who_want_it"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_large"/>
+  </RelativeLayout>
+
+  <View
+      android:id="@+id/viewSeparator"
+      style="@style/Layout.FillWidth"
+      android:layout_height="@dimen/border_width_very_tiny"
+      android:layout_below="@+id/ivBack"
+      android:background="@color/item_border"/>
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/srlLike"
+      style="@style/Layout.FillWidthHeight">
+
+    <ListView
+        android:id="@+id/lvLike"
+        style="@style/Layout.FillWidth"
+        android:layout_marginTop="@dimen/margin_padding_small"
+        android:divider="@color/item_border"
+        android:dividerHeight="@dimen/border_width_very_tiny"
+        android:paddingLeft="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"/>
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

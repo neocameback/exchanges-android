@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/Layout.FillWidthHeight"
+                android:background="@color/white">
+
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/Layout.FillWidthHeight"
+              android:layout_above="@+id/rlBottom"
+              android:background="@color/white">
+
+    <LinearLayout
+        style="@style/Layout.FillWidth.Vertical"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingTop="@dimen/margin_padding_small">
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaBoldTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_marginBottom="@dimen/margin_padding_small"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_marginTop="@dimen/margin_padding_normal"
+          android:gravity="center_horizontal"
+          android:text="@string/public_profile"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/border_width_tiny"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_marginRight="@dimen/margin_padding_small"
+          android:background="@color/divider"/>
+
+      <LinearLayout
+          style="@style/Layout.FillWidth.Horizontal"
+          android:background="@color/white"
+          android:gravity="center_vertical"
+          android:padding="@dimen/margin_padding_small">
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="4"
+            android:text="@string/firstname"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etFirstname"
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="6"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="2"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"
+            app:met_floatingLabel="none"/>
+      </LinearLayout>
+
+      <LinearLayout
+          style="@style/Layout.FillWidth.Horizontal"
+          android:background="@color/white"
+          android:gravity="center_vertical"
+          android:padding="@dimen/margin_padding_small">
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="4"
+            android:text="@string/lastname"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etLastname"
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="6"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="2"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"
+            app:met_floatingLabel="none"/>
+      </LinearLayout>
+
+      <LinearLayout
+          style="@style/Layout.FillWidth.Horizontal"
+          android:background="@color/white"
+          android:gravity="center_vertical"
+          android:padding="@dimen/margin_padding_small">
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="4"
+            android:text="@string/my_city"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etCity"
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="6"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="2"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"
+            app:met_floatingLabel="none"/>
+      </LinearLayout>
+
+      <LinearLayout
+          style="@style/Layout.FillWidth.Horizontal"
+          android:background="@color/white"
+          android:padding="@dimen/margin_padding_small">
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="4"
+            android:text="@string/bio"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etBio"
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="5"
+            android:maxLines="5"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"
+            app:met_floatingLabel="none"/>
+      </LinearLayout>
+
+      <LinearLayout
+          style="@style/Layout.FillWidth.Horizontal"
+          android:background="@color/white"
+          android:padding="@dimen/margin_padding_small">
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="4"
+            android:text="@string/profile_picture"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"/>
+
+        <LinearLayout
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="4">
+
+          <ImageView
+              android:id="@+id/ivAvatar"
+              android:layout_width="@dimen/button_size_xlarge"
+              android:layout_height="@dimen/button_size_xlarge"/>
+        </LinearLayout>
+      </LinearLayout>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaBoldTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_marginBottom="@dimen/margin_padding_small"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_marginTop="@dimen/margin_padding_xxnormal"
+          android:gravity="center_horizontal"
+          android:text="@string/private_profile"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/border_width_tiny"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_marginRight="@dimen/margin_padding_small"
+          android:background="@color/divider"/>
+
+      <LinearLayout
+          style="@style/Layout.FillWidth.Horizontal"
+          android:background="@color/white"
+          android:gravity="center_vertical"
+          android:padding="@dimen/margin_padding_small">
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="4"
+            android:text="@string/email"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etEmail"
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="6"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="2"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"
+            app:met_floatingLabel="none"/>
+      </LinearLayout>
+
+      <LinearLayout
+          style="@style/Layout.FillWidth.Horizontal"
+          android:background="@color/white"
+          android:gravity="center_vertical"
+          android:padding="@dimen/margin_padding_small">
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="4"
+            android:text="@string/gender"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"/>
+
+        <RadioGroup
+            android:id="@+id/radioOptions"
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+          <RadioButton
+              android:id="@+id/rbMale"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:checked="false"
+              android:text="@string/male"
+              android:textColor="@color/app_primary_text_color"
+              android:textSize="@dimen/text_size_normal"/>
+
+          <RadioButton
+              android:id="@+id/rbFemale"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/margin_padding_small"
+              android:layout_weight="1"
+              android:checked="false"
+              android:text="@string/female"
+              android:textColor="@color/app_primary_text_color"
+              android:textSize="@dimen/text_size_normal"/>
+
+        </RadioGroup>
+      </LinearLayout>
+
+      <LinearLayout
+          style="@style/Layout.FillWidth.Horizontal"
+          android:background="@color/white"
+          android:gravity="center_vertical"
+          android:padding="@dimen/margin_padding_small">
+
+        <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="4"
+            android:text="@string/birthday"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/etBirthday"
+            style="@style/Layout.Weight.Width"
+            android:layout_weight="6"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="2"
+            android:textColor="@color/app_primary_text_color"
+            android:textSize="@dimen/text_size_xnormal"
+            app:met_floatingLabel="none"/>
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <include layout="@layout/layout_bottom_relative"/>
+</RelativeLayout>

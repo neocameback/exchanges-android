@@ -1,0 +1,123 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+  </style>
+
+  <style name="CustomTheme" parent="MaterialDrawerTheme.Light">
+    <!-- ...and here we setting appcompat’s color theme attrs -->
+    <item name="colorPrimary">@color/app_primary_color</item>
+    <item name="colorPrimaryDark">@color/app_primary_color</item>
+    <item name="colorAccent">@color/app_primary_color</item>
+
+    <!-- MaterialDrawer specific values -->
+    <item name="material_drawer_background">@color/white</item>
+    <item name="material_drawer_icons">@color/app_primary_color</item>
+    <item name="material_drawer_primary_text">@color/app_primary_color</item>
+    <item name="material_drawer_secondary_text">@color/app_primary_color
+    </item>
+    <item name="material_drawer_hint_text">@color/divider</item>
+    <item name="material_drawer_divider">@color/divider</item>
+    <item name="material_drawer_selected">@color/app_primary_color</item>
+    <item name="material_drawer_selected_text">@color/white</item>
+    <item name="material_drawer_header_selection_text">@color/white</item>
+
+    <!-- CAB :D -->
+    <item name="windowActionModeOverlay">true</item>
+  </style>
+
+  <style name="CustomActionBar" parent="@style/MaterialDrawerTheme.ActionBar">
+    <item name="colorPrimary">@color/app_primary_color</item>
+    <item name="colorPrimaryDark">@color/app_primary_color</item>
+    <item name="colorAccent">@color/app_primary_color</item>
+    <item name="android:windowContentOverlay">@null</item>
+
+  </style>
+
+
+  <!--Login & Signup-->
+
+  <style name="SignupEditText" parent="@style/Layout.FillWidth">
+    <item name="android:layout_marginLeft">@dimen/margin_padding_normal</item>
+    <item name="android:background">@drawable/bg_signup_edittext_layout</item>
+    <item name="android:gravity">bottom</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textColorHint">@color/white</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <style name="SignupButton" parent="@style/Layout.FillWidth">
+    <item name="android:layout_height">@dimen/signup_button_height</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+
+  <style name="SendTicketEditText" parent="@style/Layout.FillWidth">
+    <item name="android:background">@drawable/bg_edittext_border_black</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:textColorHint">@color/white</item>
+    <item name="android:singleLine">true</item>
+    <item name="android:textSize">@dimen/text_size_large</item>
+  </style>
+
+  <style name="TextStatisticTitle">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">3.3</item>
+    <item name="android:gravity">left</item>
+    <item name="android:textSize">@dimen/text_size_large</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:paddingRight">@dimen/margin_padding_tiny</item>
+  </style>
+
+  <style name="TextStatisticContent">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">6.7</item>
+    <item name="android:textSize">@dimen/text_size_large</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:paddingLeft">@dimen/margin_padding_small</item>
+  </style>
+
+
+  <style name="CustomAlertDialogStyle">
+    <item name="android:bottomBright">@color/transparent</item>
+    <item name="android:bottomDark">@color/transparent</item>
+    <item name="android:bottomMedium">@color/transparent</item>
+    <item name="android:centerBright">@color/transparent</item>
+    <item name="android:centerDark">@color/transparent</item>
+    <item name="android:centerMedium">@color/transparent</item>
+    <item name="android:fullBright">@color/transparent</item>
+    <item name="android:fullDark">@color/transparent</item>
+    <item name="android:topBright">@color/transparent</item>
+    <item name="android:topDark">@color/transparent</item>
+  </style>
+
+  <style name="ProgressDialogTheme" parent="android:Theme.Holo.Dialog">
+    <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+    <item name="android:windowBackground">@color/transparent</item>
+    <item name="android:textColorPrimary">#FFFFFF</item>
+    <item name="android:backgroundDimEnabled">false</item>
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">12sp</item>
+  </style>
+
+
+  <style name="PocketProgressBar" parent="SmoothProgressBar">
+    <item name="spb_stroke_separator_length">4dp</item>
+    <item name="spb_sections_count">4</item>
+    <item name="spb_speed">1</item>
+    <item name="android:interpolator">@anim/pocket_interpolator</item>
+    <item name="spb_colors">@array/progress_colors</item>
+    <item name="spb_progressiveStart_activated">true</item>
+    <item name="spb_generate_background_with_colors">false</item>
+  </style>
+
+
+</resources>

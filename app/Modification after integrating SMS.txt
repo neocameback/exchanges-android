@@ -1,0 +1,3 @@
+- Delete auto-filled code in Verify Account screen
+- Delete auto-filled code in Verify Transactin screen
+- Delete new password promt in Forgot Password screen

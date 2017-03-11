@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+  <RelativeLayout
+      style="@style/Layout.FillWidth"
+      android:layout_height="?attr/actionBarSize">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvSelectedCategory"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:singleLine="true"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_large"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvApply"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/margin_padding_small"
+        android:background="@drawable/btn_primary_selector"
+        android:paddingBottom="@dimen/margin_padding_xtiny"
+        android:paddingLeft="@dimen/margin_padding_normal"
+        android:paddingRight="@dimen/margin_padding_normal"
+        android:paddingTop="@dimen/margin_padding_xtiny"
+        android:singleLine="true"
+        android:text="@string/apply"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_large"/>
+
+  </RelativeLayout>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/border_width_tiny"
+      android:background="@drawable/bg_view_shader"/>
+
+  <ListView
+      android:id="@+id/lvCategory"
+      style="@style/Layout.FillWidth"
+      android:layout_marginTop="@dimen/margin_padding_small"
+      android:divider="@color/item_border"
+      android:dividerHeight="@dimen/border_width_very_tiny"/>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:rb="http://schemas.android.com/apk/res-auto"
+              android:background="@color/white"
+              style="@style/Layout.FillWidthHeight.Vertical">
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/llItem"
+                  style="@style/Layout.FillWidth.Horizontal"
+                  android:layout_alignParentTop="true"
+                  android:gravity="center_vertical"
+                  android:padding="@dimen/margin_padding_small">
+
+    <ImageView
+        android:id="@+id/ivUser"
+        android:layout_width="@dimen/button_size_large"
+        android:layout_height="@dimen/button_size_large"
+        android:layout_alignParentLeft="true"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvUser"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_toRightOf="@+id/ivUser"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+  </RelativeLayout>
+
+  <View
+      android:id="@+id/viewSeparator1"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/border_width_small"
+      android:layout_below="@+id/llItem"
+      android:layout_marginBottom="@dimen/margin_padding_normal"
+      android:background="@drawable/bg_view_shader"/>
+
+  <ScrollView
+      style="@style/Layout.FillWidthHeight"
+      android:layout_below="@+id/viewSeparator1"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:padding="@dimen/margin_padding_small">
+
+    <LinearLayout style="@style/Layout.FillWidth.Vertical">
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_marginTop="@dimen/margin_padding_small"
+          android:layout_gravity="center_horizontal"
+          android:text="@string/how_you_feel"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xxnormal"/>
+
+      <in.flashbulb.coloredratingbar.ColoredRatingBar
+          android:id="@+id/rbRating"
+          style="@style/coloredRatingBarStyle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="@dimen/margin_padding_xxnormal"
+          android:layout_toRightOf="@+id/ivUser"
+          rb:rating="4"/>
+
+      <EditText
+          android:id="@+id/etReview"
+          style="@style/Layout.FillWidth"
+          android:layout_marginTop="@dimen/margin_padding_xxnormal"
+          android:background="@drawable/bg_review"
+          android:hint="@string/review_hint"
+          android:gravity="top"
+          android:inputType="textMultiLine|textCapSentences"
+          android:lines="5"
+          android:padding="@dimen/margin_padding_small"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+      <com.pendulab.theExchange.widget.HorizontalListView
+          android:id="@+id/lvPositive"
+          android:layout_width="match_parent"
+          android:layout_marginTop="@dimen/margin_padding_xnormal"
+          android:layout_height="@dimen/button_size_xnormal"/>
+
+      <com.pendulab.theExchange.widget.HorizontalListView
+          android:id="@+id/lvNegative"
+          android:layout_width="match_parent"
+          android:layout_marginTop="@dimen/margin_padding_xnormal"
+          android:layout_height="@dimen/button_size_xnormal"/>
+
+    </LinearLayout>
+  </ScrollView>
+
+  <include layout="@layout/layout_bottom_relative"/>
+</LinearLayout>

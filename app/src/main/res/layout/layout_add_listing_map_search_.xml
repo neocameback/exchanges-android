@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rlMapSearchAddListing"
+            style="@style/Layout.FillWidthHeight"
+            android:fillViewport="true">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:background="@color/white"
+      android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/maps"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewShader"/>
+
+    <View
+        android:id="@+id/viewShader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_small"
+        android:layout_above="@+id/tvMapLocation"
+        android:background="@drawable/bg_view_shader"/>
+
+    <RelativeLayout
+        style="@style/Layout.FillWidth"
+        android:id="@+id/rlSearch"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_marginRight="@dimen/margin_padding_small"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:background="@drawable/bg_map_search_layout"
+        android:padding="@dimen/margin_padding_small">
+
+      <com.rengwuxian.materialedittext.MaterialEditText
+          android:id="@+id/etSearchLocation"
+          style="@style/Layout.FillWidth"
+          android:layout_centerVertical="true"
+          android:layout_toLeftOf="@+id/ivSearch"
+          android:hint="@string/search_for_a_place"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_large"
+          app:met_floatingLabel="highlight"/>
+
+      <ImageView
+          android:id="@+id/ivSearch"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:src="@drawable/ic_search_black"/>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lvSearchLocation"
+        style="@style/Layout.FillWidth"
+        android:visibility="gone"
+        android:layout_below="@+id/rlSearch"
+        android:padding="@dimen/margin_padding_small"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_marginRight="@dimen/margin_padding_small"
+        android:background="@drawable/bg_map_search_layout"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvMapLocation"
+        style="@style/Layout.FillWidth"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_padding_large"
+        android:paddingTop="@dimen/margin_padding_large"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_large"/>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/btnCurrentLocation"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btnAcceptLocation"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/margin_padding_small"
+        android:layout_marginRight="@dimen/margin_padding_small"
+        android:src="@drawable/ic_locale_gps_on"
+        app:fab_colorNormal="@color/white"/>
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/btnAcceptLocation"
+        android:layout_width="@dimen/button_size_xlarge"
+        android:layout_height="@dimen/button_size_xlarge"
+        android:layout_above="@+id/tvMapLocation"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="-20dp"
+        android:layout_marginRight="@dimen/margin_padding_small"
+        android:src="@drawable/ic_action_accept"
+        app:fab_colorNormal="@color/app_primary_color"/>
+
+  </RelativeLayout>
+</ScrollView>
+

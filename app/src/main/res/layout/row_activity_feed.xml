@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/Layout.FillWidthHeight"
+                android:background="@drawable/bg_white_selector"
+                android:padding="@dimen/margin_padding_small">
+
+  <RelativeLayout
+      android:id="@+id/rlInfo"
+      style="@style/Layout.FillWidth"
+      android:background="@drawable/bg_white_selector">
+
+    <com.pendulab.theExchange.widget.CircularImageView
+        android:id="@+id/ivUser"
+        android:layout_width="@dimen/button_size_xxnormal"
+        android:layout_height="@dimen/button_size_xxnormal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        app:border="true"
+        app:border_color="#888888"
+        app:border_width="0dp"
+        app:shadow="false"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvContent"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_toLeftOf="@+id/ivItem"
+        android:layout_toRightOf="@+id/ivUser"
+        android:background="@drawable/bg_white_selector"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvDate"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_below="@+id/tvContent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_marginTop="@dimen/margin_padding_tiny"
+        android:layout_toRightOf="@+id/ivUser"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/ivItem"
+        android:textColor="@color/app_secondary_text_color"
+        android:textSize="@dimen/text_size_normal"/>
+
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="@dimen/button_size_xxnormal"
+        android:layout_height="@dimen/button_size_xxnormal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/tvDate"
+        android:layout_marginLeft="@dimen/margin_padding_small"/>
+
+  </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+

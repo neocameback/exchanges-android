@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/MaterialDrawerLib" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/etsyStaggeredGridLib" />
+            <option value="$PROJECT_DIR$/facebookSDK" />
+            <option value="$PROJECT_DIR$/libAndroidSlidingUpPanel" />
+            <option value="$PROJECT_DIR$/libColorRating" />
+            <option value="$PROJECT_DIR$/libMaterialEditText" />
+            <option value="$PROJECT_DIR$/libMaterialShowcase" />
+            <option value="$PROJECT_DIR$/libObservableScrollView" />
+            <option value="$PROJECT_DIR$/libRangebar" />
+            <option value="$PROJECT_DIR$/libraryQuickReturn" />
+            <option value="$PROJECT_DIR$/pageSlidingTabStripLib" />
+            <option value="$PROJECT_DIR$/ssmoothProgressBarLibrary" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

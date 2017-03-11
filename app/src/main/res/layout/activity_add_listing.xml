@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+  <com.sothree.slidinguppanel.SlidingUpPanelLayout
+      xmlns:sothree="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/panelLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="bottom"
+      sothree:umanoDragView="@+id/rlMapSearchAddListing"
+      sothree:umanoOverlay="true"
+      sothree:umanoPanelHeight="0dp"
+      sothree:umanoParalaxOffset="100dp"
+      sothree:umanoScrollableView="@+id/rlMapSearchAddListing"
+      sothree:umanoShadowHeight="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background_layer"
+        android:orientation="vertical">
+
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:background="?attr/colorPrimary"
+          android:elevation="0dp"
+          android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+          app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+      <ScrollView
+          style="@style/Layout.FillWidthHeight"
+          android:layout_height="0dp"
+          android:layout_weight="1">
+
+        <LinearLayout style="@style/Layout.FillWidth.Vertical">
+
+          <LinearLayout
+              android:id="@+id/llImages"
+              style="@style/Layout.FillWidth.Horizontal"
+              android:paddingLeft="@dimen/margin_padding_small"
+              android:paddingRight="@dimen/margin_padding_small"
+              android:paddingTop="@dimen/margin_padding_small"
+              android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/iv1"
+                style="@style/Layout.Weight.Width"
+                android:background="@drawable/bg_add_listing_cell"
+                android:scaleType="centerInside"
+                android:src="@drawable/bg_cover_photo"/>
+
+            <ImageView
+                android:id="@+id/iv2"
+                style="@style/Layout.Weight.Width"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:background="@drawable/bg_add_listing_cell"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_camera_dark"/>
+
+            <ImageView
+                android:id="@+id/iv3"
+                style="@style/Layout.Weight.Width"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:background="@drawable/bg_add_listing_cell"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_camera_dark"/>
+
+            <ImageView
+                android:id="@+id/iv4"
+                style="@style/Layout.Weight.Width"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:background="@drawable/bg_add_listing_cell"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_action_camera_dark"/>
+
+          </LinearLayout>
+
+          <com.pendulab.theExchange.fontWidget.ProximaNovaBoldTextView
+              style="@style/Layout.WrapWidthHeight"
+              android:layout_marginLeft="@dimen/margin_padding_small"
+              android:layout_marginTop="@dimen/margin_padding_normal"
+              android:gravity="center_horizontal"
+              android:padding="@dimen/margin_padding_small"
+              android:text="@string/details"
+              android:textColor="@color/black"
+              android:textSize="@dimen/text_size_xnormal"/>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/border_width_tiny"
+              android:background="@color/divider"/>
+
+          <RelativeLayout
+              style="@style/Layout.FillWidth"
+              android:background="@color/white"
+              android:padding="@dimen/margin_padding_small">
+
+            <ImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_star_light"/>
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:layout_toRightOf="@+id/ivCategory"
+                android:text="@string/category"
+                android:textColor="@color/app_primary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+            <Spinner
+                android:id="@+id/spnCategory"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:spinnerMode="dialog"/>
+
+
+          </RelativeLayout>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/border_width_tiny"
+              android:background="@color/divider"/>
+
+          <RelativeLayout
+              style="@style/Layout.FillWidth"
+              android:layout_weight="1"
+              android:background="@color/white"
+              android:padding="@dimen/margin_padding_small">
+
+            <ImageView
+                android:id="@+id/ivTile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_info_light"/>
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+                android:id="@+id/tviTitle"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:layout_toRightOf="@+id/ivTile"
+                android:text="@string/title"
+                android:textColor="@color/app_primary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularEditText
+                android:id="@+id/etTitle"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_large"
+                android:layout_toRightOf="@+id/tvTitle"
+                android:background="@color/transparent"
+                android:gravity="right"
+                android:hint="@string/title_hint"
+                android:inputType="textCapSentences"
+                android:maxLines="5"
+                android:singleLine="true"
+                android:textColor="@color/app_primary_text_color"
+                android:textColorHint="@color/app_secondary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+          </RelativeLayout>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/border_width_tiny"
+              android:background="@color/divider"/>
+
+          <RelativeLayout
+              style="@style/Layout.FillWidth"
+              android:background="@color/white"
+              android:padding="@dimen/margin_padding_small">
+
+            <ImageView
+                android:id="@+id/ivDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_info_light"/>
+
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+                android:id="@+id/tvDescription"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:layout_toRightOf="@+id/ivDescription"
+                android:text="@string/description"
+                android:textColor="@color/app_primary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularEditText
+                android:id="@+id/etDescription"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_large"
+                android:layout_toRightOf="@+id/tvDescription"
+                android:background="@color/transparent"
+                android:gravity="right"
+                android:hint="@string/optional"
+                android:inputType="textMultiLine|textCapSentences"
+                android:maxLines="5"
+                android:textColor="@color/app_primary_text_color"
+                android:textColorHint="@color/app_secondary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+          </RelativeLayout>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/border_width_tiny"
+              android:background="@color/divider"/>
+
+          <RelativeLayout
+              style="@style/Layout.FillWidth"
+              android:background="@color/white"
+              android:padding="@dimen/margin_padding_small">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_info_light"/>
+
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+                android:id="@+id/tvPlace"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:layout_toRightOf="@+id/ivLocation"
+                android:text="@string/place"
+                android:textColor="@color/app_primary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularEditText
+                android:id="@+id/etPlace"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_large"
+                android:layout_toRightOf="@+id/tvPlace"
+                android:background="@color/transparent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="right"
+                android:hint="@string/where_to_meet_buyers"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:textColor="@color/app_primary_text_color"
+                android:textColorHint="@color/app_secondary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+          </RelativeLayout>
+
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/border_width_tiny"
+              android:background="@color/divider"/>
+
+          <RelativeLayout
+              style="@style/Layout.FillWidth"
+              android:background="@color/white"
+              android:padding="@dimen/margin_padding_small">
+
+            <ImageView
+                android:id="@+id/ivPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_tag_light"/>
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+                android:id="@+id/tvPrice"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:layout_toRightOf="@+id/ivPrice"
+                android:text="@string/price"
+                android:textColor="@color/app_primary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularEditText
+                android:id="@+id/etPrice"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_large"
+                android:layout_toLeftOf="@+id/tvCredits"
+                android:background="@color/transparent"
+                android:gravity="right"
+                android:inputType="number"
+                android:minWidth="@dimen/button_size_large"
+                android:text="0"
+                android:textColor="@color/app_primary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+            <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+                android:id="@+id/tvCredits"
+                style="@style/Layout.WrapWidthHeight"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_padding_small"
+                android:text="@string/credits"
+                android:textColor="@color/app_primary_text_color"
+                android:textSize="@dimen/text_size_xnormal"/>
+
+          </RelativeLayout>
+        </LinearLayout>
+
+      </ScrollView>
+
+      <include layout="@layout/layout_bottom_relative"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_add_listing_map_search_"/>
+
+  </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</RelativeLayout>

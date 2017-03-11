@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_white_transparent"
+              android:orientation="vertical">
+
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/lblMessage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_padding_tiny"
+      android:layout_marginTop="@dimen/margin_padding_tiny"
+      android:gravity="center_horizontal"
+      android:paddingBottom="@dimen/margin_padding_xnormal"
+      android:paddingLeft="@dimen/margin_padding_small"
+      android:paddingRight="@dimen/margin_padding_small"
+      android:paddingTop="@dimen/margin_padding_xnormal"
+      android:textColor="@color/app_primary_text_color"
+      android:textSize="@dimen/text_size_large"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/app_primary_color"/>
+
+  <LinearLayout style="@style/Layout.FillWidth.Vertical"
+                android:id="@+id/llGooglePlay">
+
+    <LinearLayout style="@style/Layout.FillWidth.Horizontal"
+                  android:background="@drawable/bg_white_selector"
+                  android:padding="@dimen/margin_padding_small"
+                  android:gravity="center_vertical">
+
+      <ImageView
+          android:id="@+id/ivGooglePlay"
+          android:layout_width="@dimen/button_size_xnormal"
+          android:layout_height="@dimen/button_size_xnormal"
+          android:layout_marginRight="@dimen/margin_padding_small"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:text="@string/google_play"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/item_border"/>
+
+    <LinearLayout
+        android:id="@+id/llPaypal"
+        style="@style/Layout.FillWidth.Horizontal"
+        android:padding="@dimen/margin_padding_small"
+        android:background="@drawable/bg_white_selector"
+        android:gravity="center_vertical">
+
+      <ImageView
+          android:id="@+id/ivPaypal"
+          android:layout_width="@dimen/button_size_xnormal"
+          android:layout_height="@dimen/button_size_xnormal"
+          android:layout_marginRight="@dimen/margin_padding_small"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          style="@style/Layout.WrapWidthHeight"
+          android:text="@string/paypal"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

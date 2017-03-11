@@ -1,0 +1,164 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llBottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/button_size_large"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+  <LinearLayout
+      android:id="@+id/llEdit"
+      style="@style/Layout.Weight.Width"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:background="@drawable/bg_button_offer_selector"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="@dimen/button_size_normal"
+        android:layout_height="@dimen/button_size_normal"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:text="@string/edit"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_large"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/llChat"
+      style="@style/Layout.Weight.Width"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:background="@drawable/bg_button_chat_selector"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivChat"
+        android:layout_width="@dimen/button_size_normal"
+        android:layout_height="@dimen/button_size_normal"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:text="@string/chat"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_large"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/llOffer"
+      style="@style/Layout.Weight.Width"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:background="@drawable/bg_button_offer_selector"
+      android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/ivOffer"
+        android:layout_width="@dimen/button_size_normal"
+        android:layout_height="@dimen/button_size_normal"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:text="@string/offer"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_large"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/llViewOffer"
+      style="@style/Layout.Weight.Width"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:background="@drawable/bg_button_view_offer_selector"
+      android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/ivViewOffer"
+        android:layout_width="@dimen/button_size_normal"
+        android:layout_height="@dimen/button_size_normal"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:text="@string/view_offers"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_large"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/llVerifyTransaction"
+      style="@style/Layout.Weight.Width"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:background="@drawable/bg_button_verify_transaction_selector"
+      android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/ivVerifyTransaction"
+        android:layout_width="@dimen/button_size_normal"
+        android:layout_height="@dimen/button_size_normal"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:text="@string/verify_transaction"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_large"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/llGone"
+      style="@style/Layout.Weight.Width"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:background="@drawable/bg_button_chat_selector"
+      android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/ivGone"
+        android:layout_width="@dimen/button_size_normal"
+        android:layout_height="@dimen/button_size_normal"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:text="@string/gone_view_chat"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_large"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/llVerifyPending"
+      style="@style/Layout.Weight.Width"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:background="@drawable/bg_button_transaction_pending_selector"
+      android:orientation="horizontal">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:text="@string/verification_pending"
+        android:textColor="@color/app_third_text_color"
+        android:textSize="@dimen/text_size_large"/>
+  </LinearLayout>
+
+</LinearLayout>

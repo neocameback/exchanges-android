@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    style="@style/Layout.FillWidthHeight">
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/app_background_layer"
+                  android:focusableInTouchMode="true">
+
+    <com.pendulab.theExchange.widget.HeaderGridView
+        android:id="@+id/gvItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:horizontalSpacing="@dimen/margin_padding_small"
+        android:numColumns="@integer/grid_column_count"
+        android:paddingLeft="@dimen/margin_padding_small"
+        android:paddingRight="@dimen/margin_padding_small"
+        android:layout_marginTop="@dimen/margin_padding_small"
+        android:layout_marginBottom="@dimen/margin_padding_small"
+        android:scrollbarStyle="outsideOverlay"
+        android:verticalSpacing="@dimen/margin_padding_small"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvNoResult"
+        style="@style/Layout.FillWidthHeight"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/no_item_found"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_large"
+        android:visibility="gone"/>
+  </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

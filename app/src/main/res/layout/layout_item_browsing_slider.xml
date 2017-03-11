@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rlBrowseOptions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+  <ViewStub
+      android:id="@+id/vsLocation"
+      style="@style/Layout.FillWidthHeight"
+      android:inflatedId="@+id/infLocation"
+      android:layout="@layout/panel_browsing_location"/>
+
+  <ViewStub
+      android:id="@+id/vsCategory"
+      style="@style/Layout.FillWidthHeight"
+      android:inflatedId="@+id/infCategory"
+      android:layout="@layout/panel_browsing_category"/>
+
+  <ViewStub
+      android:id="@+id/vsSort"
+      style="@style/Layout.FillWidthHeight"
+      android:inflatedId="@+id/infSort"
+      android:layout="@layout/panel_browsing_sort"/>
+
+</RelativeLayout>

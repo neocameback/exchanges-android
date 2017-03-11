@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/app_background_layer"
+              android:orientation="vertical">
+
+  <LinearLayout
+      style="@style/Layout.FillWidth.Vertical"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+    <RelativeLayout
+        style="@style/Layout.FillWidth"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:background="@color/white"
+        android:padding="@dimen/margin_padding_small">
+
+      <ImageView
+          android:id="@+id/ivTile"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:src="@drawable/ic_info_light"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          android:id="@+id/tvTitle"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_toRightOf="@+id/ivTile"
+          android:text="@string/title"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularEditText
+          android:id="@+id/etTitle"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_padding_large"
+          android:layout_toRightOf="@+id/tvTitle"
+          android:background="@color/transparent"
+          android:gravity="right"
+          android:hint="@string/wishlist_title_hint"
+          android:inputType="textCapSentences|textMultiLine"
+          android:maxLines="5"
+          android:textColor="@color/app_primary_text_color"
+          android:textColorHint="@color/app_secondary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:background="@color/divider"/>
+
+    <RelativeLayout
+        style="@style/Layout.FillWidth"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:padding="@dimen/margin_padding_small">
+
+      <ImageView
+          android:id="@+id/ivPrice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:src="@drawable/ic_tag_light"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          android:id="@+id/tvPrice"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_toRightOf="@+id/ivPrice"
+          android:text="@string/minimum_price"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularEditText
+          android:id="@+id/etMinPrice"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_padding_large"
+          android:layout_toLeftOf="@+id/tvCredits"
+          android:background="@color/transparent"
+          android:gravity="right"
+          android:inputType="number"
+          android:minWidth="@dimen/button_size_large"
+          android:text="0"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          android:id="@+id/tvCredits"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:text="@string/credits"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:background="@color/divider"/>
+
+    <RelativeLayout
+        style="@style/Layout.FillWidth"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:padding="@dimen/margin_padding_small">
+
+      <ImageView
+          android:id="@+id/ivMaxPrice"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:src="@drawable/ic_tag_light"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          android:id="@+id/tvMaxPrice"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:layout_toRightOf="@+id/ivMaxPrice"
+          android:text="@string/maximum_price"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularEditText
+          android:id="@+id/etMaxPrice"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_padding_large"
+          android:layout_toLeftOf="@+id/tvCredits2"
+          android:background="@color/transparent"
+          android:gravity="right"
+          android:inputType="number"
+          android:minWidth="@dimen/button_size_large"
+          android:text="0"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          android:id="@+id/tvCredits2"
+          style="@style/Layout.WrapWidthHeight"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_padding_small"
+          android:text="@string/credits"
+          android:textColor="@color/app_primary_text_color"
+          android:textSize="@dimen/text_size_xnormal"/>
+
+    </RelativeLayout>
+  </LinearLayout>
+
+  <include layout="@layout/layout_bottom_relative"/>
+
+
+</LinearLayout>

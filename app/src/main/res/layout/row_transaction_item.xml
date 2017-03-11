@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Layout.FillWidthHeight.Vertical"
+              android:padding="@dimen/margin_padding_small">
+
+  <RelativeLayout
+      android:id="@+id/rlInfo"
+      style="@style/Layout.FillWidth"
+      android:background="@drawable/bg_white_selector">
+
+    <ImageView
+        android:id="@+id/ivItem"
+        android:layout_width="@dimen/button_size_xxnormal"
+        android:layout_height="@dimen/button_size_xxnormal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvItem"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_toRightOf="@+id/ivItem"
+        android:background="@drawable/bg_white_selector"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvContent"
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_below="@+id/tvItem"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin_padding_small"
+        android:layout_marginTop="@dimen/margin_padding_tiny"
+        android:layout_toRightOf="@+id/ivItem"
+        android:singleLine="true"
+        android:textColor="@color/app_secondary_text_color"
+        android:textSize="@dimen/text_size_normal"/>
+
+  </RelativeLayout>
+
+  <HorizontalScrollView
+      android:id="@+id/svItem"
+      style="@style/Layout.FillWidth"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/rlContent"
+      android:layout_marginLeft="@dimen/button_size_xxnormal"
+      android:layout_toRightOf="@+id/ivUser">
+
+    <LinearLayout
+        android:id="@+id/llItem"
+        style="@style/Layout.WrapWidthHeight.Horizontal"
+        android:layout_marginTop="@dimen/margin_padding_small"
+        android:layout_toRightOf="@+id/ivUser"
+        android:layout_marginLeft="@dimen/margin_padding_small"/>
+
+  </HorizontalScrollView>
+
+  <View
+      android:id="@+id/viewSeparator"
+      android:layout_width="fill_parent"
+      android:layout_height="@dimen/border_width_very_tiny"
+      android:layout_marginTop="@dimen/margin_padding_small"
+      android:background="@color/item_border"/>
+</LinearLayout>
+
+
+

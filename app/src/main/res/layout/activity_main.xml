@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:app1="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center">
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:layout_alignParentTop="true"
+      android:background="?attr/colorPrimary"
+      android:elevation="0dp"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        style="@style/Layout.FillWidthHeight"
+        android:paddingBottom="@dimen/margin_padding_tiny"
+        android:paddingTop="@dimen/margin_padding_tiny">
+
+
+      <RelativeLayout
+          android:layout_width="@dimen/button_size_xlarge"
+          android:layout_height="match_parent"
+          android:visibility="gone"
+          android:layout_toLeftOf="@+id/ivActionFindUser">
+
+        <ImageView
+            android:id="@+id/ivActionInbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/btn_actionbar_selector"
+            android:padding="8dp"
+            android:src="@drawable/ic_action_inbox"/>
+
+        <com.pendulab.theExchange.fontWidget.NotificationTextView
+            android:id="@+id/tvNewMessage"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_notification_red"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:visibility="gone"/>
+      </RelativeLayout>
+
+      <ImageView
+          android:id="@+id/ivActionFindUser"
+          android:layout_width="@dimen/button_size_xlarge"
+          android:layout_height="match_parent"
+          android:layout_toLeftOf="@+id/ivActionSearch"
+          android:adjustViewBounds="true"
+          android:background="@drawable/btn_actionbar_selector"
+          android:padding="8dp"
+          android:src="@drawable/ic_action_find_user"/>
+
+      <ImageView
+          android:id="@+id/ivActionSearch"
+          android:layout_width="@dimen/button_size_xlarge"
+          android:layout_height="match_parent"
+          android:layout_toLeftOf="@+id/ivActionAdd"
+          android:adjustViewBounds="true"
+          android:background="@drawable/btn_actionbar_selector"
+          android:padding="8dp"
+          android:src="@drawable/ic_action_search"/>
+
+      <ImageView
+          android:id="@+id/ivActionAdd"
+          android:layout_width="@dimen/button_size_xlarge"
+          android:layout_height="match_parent"
+          android:layout_alignParentRight="true"
+          android:adjustViewBounds="true"
+          android:background="@drawable/btn_actionbar_selector"
+          android:padding="8dp"
+          android:src="@drawable/ic_action_new"/>
+
+    </RelativeLayout>
+  </android.support.v7.widget.Toolbar>
+
+  <!-- the layout which will contain (host) the drawerLayout -->
+  <com.astuetz.PagerSlidingTabStrip
+      android:id="@+id/tabs"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/button_size_xxnormal"
+      android:layout_below="@+id/toolbar"
+      android:background="@color/app_primary_color"
+      app1:pstsShouldExpand="true"/>
+
+  <View
+      android:id="@+id/viewShader"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/border_width_small"
+      android:layout_below="@+id/tabs"
+      android:background="@drawable/bg_view_shader"/>
+
+
+  <com.pendulab.theExchange.widget.CustomViewPager
+      android:id="@+id/pager"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/llLogo"
+      android:layout_below="@+id/viewShader"/>
+
+  <LinearLayout
+      android:id="@+id/llLogo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentBottom="true"
+      android:gravity="center"
+      android:layout_below="@+id/viewSeparator1"
+      android:orientation="vertical"
+      android:layout_margin="@dimen/margin_padding_xtiny">
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_size_xsmall"
+        android:src="@drawable/app_logo_black"
+        android:layout_marginBottom="@dimen/margin_padding_tiny"
+        android:adjustViewBounds="true"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xsmall"/>
+  </LinearLayout>
+</RelativeLayout>

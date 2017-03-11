@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--(480x800, 540x960 and nearer resolution)-->
+
+  <!-- Text Size -->
+  <dimen name="text_size_tiny">2.25sp</dimen>
+  <dimen name="text_size_xtiny">3.75sp</dimen>
+  <dimen name="text_size_xxtiny">5.25sp</dimen>
+  <dimen name="text_size_small">6.75sp</dimen>
+  <dimen name="text_size_xsmall">7.5sp</dimen>
+  <dimen name="text_size_xxsmall">8.25sp</dimen>
+  <dimen name="text_size_normal">9sp</dimen>
+  <dimen name="text_size_xnormal">9.75sp</dimen>
+  <dimen name="text_size_xxnormal">10.5sp</dimen>
+  <dimen name="text_size_large">12sp</dimen>
+  <dimen name="text_size_xlarge">12.75sp</dimen>
+  <dimen name="text_size_xllarge">14.25sp</dimen>
+  <dimen name="text_size_xxlarge">15sp</dimen>
+  <dimen name="text_size_huge">15.75sp</dimen>
+  <dimen name="text_size_xhuge">17.25sp</dimen>
+  <dimen name="text_size_xxhuge">18.75sp</dimen>
+  <dimen name="text_size_xxxhuge">20.25sp</dimen>
+
+
+  <!-- Margin & padding -->
+  <dimen name="margin_padding_very_tiny">1.5dp</dimen>
+  <dimen name="margin_padding_tiny">2dp</dimen>
+  <dimen name="margin_padding_xtiny">4dp</dimen>
+  <dimen name="margin_padding_xxtiny">6dp</dimen>
+  <dimen name="margin_padding_small">8dp</dimen>
+  <dimen name="margin_padding_xsmall">10dp</dimen>
+  <dimen name="margin_padding_xxsmall">12dp</dimen>
+  <dimen name="margin_padding_normal">14dp</dimen>
+  <dimen name="margin_padding_xnormal">16dp</dimen>
+  <dimen name="margin_padding_xxnormal">18dp</dimen>
+  <dimen name="margin_padding_large">20dp</dimen>
+  <dimen name="margin_padding_xlarge">22dp</dimen>
+  <dimen name="margin_padding_xxlarge">26dp</dimen>
+  <dimen name="margin_padding_xxxlarge">30dp</dimen>
+  <dimen name="margin_padding_huge">32dp</dimen>
+  <dimen name="margin_padding_xhuge">38dp</dimen>
+  <dimen name="margin_padding_xxhuge">42dp</dimen>
+
+  <dimen name="button_size_tiny">7.5dp</dimen>
+  <dimen name="button_size_xtiny">11.25dp</dimen>
+  <dimen name="button_size_xxtiny">13.5dp</dimen>
+  <dimen name="button_size_small">15dp</dimen>
+  <dimen name="button_size_xsmall">18.75dp</dimen>
+  <dimen name="button_size_normal">22.5dp</dimen>
+  <dimen name="button_size_lnormal">26.25dp</dimen>
+  <dimen name="button_size_xnormal">30dp</dimen>
+  <dimen name="button_size_xxnormal">33.75dp</dimen>
+  <dimen name="button_size_large">37.5dp</dimen>
+  <dimen name="button_size_xlarge">45dp</dimen>
+  <dimen name="button_size_xxlarge">52.5dp</dimen>
+  <dimen name="button_size_huge">60dp</dimen>
+  <dimen name="button_size_xhuge">67.5dp</dimen>
+  <dimen name="button_size_xxhuge">75dp</dimen>
+  <dimen name="button_summit_width">60dp</dimen>
+  <dimen name="button_summit_height">30dp</dimen>
+
+</resources>

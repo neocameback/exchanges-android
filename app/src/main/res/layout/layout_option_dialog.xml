@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_white_transparent"
+              android:orientation="vertical">
+
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/lblMessage"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_padding_tiny"
+      android:layout_marginBottom="@dimen/margin_padding_tiny"
+      android:paddingLeft="@dimen/margin_padding_small"
+      android:paddingRight="@dimen/margin_padding_small"
+      android:paddingTop="@dimen/margin_padding_xnormal"
+      android:paddingBottom="@dimen/margin_padding_xnormal"
+      android:gravity="center_horizontal"
+      android:textColor="@color/app_primary_text_color"
+      android:textSize="@dimen/text_size_large"/>
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/app_primary_color"/>
+
+  <LinearLayout style="@style/Layout.FillWidth.Horizontal">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/lblPositive"
+        style="@style/Layout.Weight.Width"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin_padding_normal"
+        android:paddingBottom="@dimen/margin_padding_normal"
+        android:background="@drawable/btn_dialog_option_left_selector"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xnormal"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/app_primary_color"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/lblNegative"
+        style="@style/Layout.Weight.Width"
+        android:layout_weight="1"
+        android:background="@drawable/btn_dialog_option_right_selector"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin_padding_normal"
+        android:paddingBottom="@dimen/margin_padding_normal"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xnormal"/>
+
+  </LinearLayout>
+
+</LinearLayout>

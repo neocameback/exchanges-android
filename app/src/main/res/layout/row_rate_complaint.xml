@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/margin_padding_small"
+                android:paddingTop="@dimen/margin_padding_small">
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/tvName"
+      style="@style/Layout.WrapWidthHeight"
+      android:layout_alignParentLeft="true"
+      android:layout_centerInParent="true"
+      android:layout_toLeftOf="@+id/cbSelection"
+      android:textColor="@color/app_primary_text_color"
+      android:textSize="@dimen/text_size_large"/>
+
+  <CheckBox
+      android:id="@+id/cbSelection"
+      android:layout_width="@dimen/button_size_normal"
+      android:layout_height="@dimen/button_size_normal"
+      android:layout_alignParentRight="true"
+      android:layout_centerInParent="true"
+      android:layout_centerVertical="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/panelLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/rlBrowseOptions"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoParalaxOffset="100dp"
+    sothree:umanoScrollableView="@+id/rlBrowseOptions"
+    sothree:umanoShadowHeight="4dp">
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/white">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewGradient">
+
+      <com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+          android:id="@+id/scroll"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <android.support.v4.view.ViewPager
+              android:id="@+id/pager"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/button_size_xxhuge"
+              android:background="@color/app_primary_color"/>
+
+          <com.pendulab.theExchange.widget.CirclePageIndicator
+              android:id="@+id/indicator"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/llContent"
+              android:layout_centerInParent="true"
+              android:layout_centerVertical="true"
+              android:layout_marginBottom="@dimen/margin_padding_small"/>
+
+          <View
+              android:id="@+id/anchor"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/button_size_xxhuge"
+              android:minHeight="@dimen/button_size_xxhuge"/>
+
+          <include layout="@layout/layout_item_details_content"/>
+
+        </RelativeLayout>
+
+      </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <View
+        android:id="@+id/viewGradient"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_small"
+        android:layout_above="@+id/llBottom"
+        android:background="@drawable/bg_black_gradient"/>
+
+    <include layout="@layout/layout_item_details_bottom"/>
+
+    <ViewStub
+        android:id="@+id/vsFullScreen"
+        style="@style/Layout.FillWidthHeight"
+        android:inflatedId="@+id/infFullScreen"
+        android:visibility="gone"
+        android:layout="@layout/layout_fullscreen_image"/>
+
+  </RelativeLayout>
+
+  <include layout="@layout/layout_item_details_slider"/>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

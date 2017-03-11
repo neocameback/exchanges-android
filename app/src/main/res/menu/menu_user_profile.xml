@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+      android:icon="@drawable/ic_action_overflow"
+      android:title=""
+      app:showAsAction="always">
+    <menu>
+      <item
+          android:id="@+id/action_report"
+          android:title="@string/report_this_user"/>
+
+      <item
+          android:id="@+id/action_block"
+          android:title="@string/block_this_user"/>
+      <item
+          android:id="@+id/action_unblock"
+          android:title="@string/unblock_this_user"/>
+    </menu>
+
+  </item>
+</menu>

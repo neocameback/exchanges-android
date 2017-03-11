@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+  <android.support.v4.view.ViewPager
+      android:id="@+id/pager"
+      style="@style/Layout.FillWidthHeight"/>
+
+
+  <RelativeLayout
+      style="@style/Layout.FillWidthHeight"
+      android:paddingLeft="@dimen/margin_padding_normal"
+      android:paddingRight="@dimen/margin_padding_normal">
+
+    <com.pendulab.theExchange.widget.CirclePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/tvLogin"
+        android:layout_height="@dimen/button_size_normal"
+        android:layout_marginBottom="@dimen/margin_padding_normal"
+        android:layout_centerInParent="true"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvLogin"
+        style="@style/Layout.FillWidth"
+        android:layout_height="@dimen/button_size_xxnormal"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_start_selector"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_padding_small"
+        android:layout_above="@+id/tvSignup"
+        android:text="@string/login"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xlarge"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvSignup"
+        style="@style/Layout.FillWidth"
+        android:layout_height="@dimen/button_size_xxnormal"
+        android:layout_marginBottom="@dimen/margin_padding_xxsmall"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_start_selector"
+        android:gravity="center"
+        android:layout_above="@+id/tvAgree"
+        android:text="@string/signup"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xlarge"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvAgree"
+        style="@style/Layout.FillWidth"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/margin_padding_normal"
+        android:gravity="center"
+        android:text="@string/agree_term_service"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xnormal"/>
+  </RelativeLayout>
+
+
+</RelativeLayout>

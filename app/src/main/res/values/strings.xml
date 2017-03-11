@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="hello_world">Hello world!</string>
+  <string name="text_log_out">Log out</string>
+  <string name="text_confirm_exit">Do you want to exit?</string>
+  <string name="text_confirm_logout">Do you want to log out?</string>
+  <string name="text_btn_ok">OK</string>
+  <string name="text_btn_cancel">Cancel</string>
+  <string name="text_yes">Yes</string>
+  <string name="text_no">No</string>
+  <string name="text_done">Done</string>
+  <string name="please_wait_message">Please wait...</string>
+  <string name="no_more_data">No more data to show</string>
+  <string name="server_error">Problem occured. Please try again.</string>
+  <string name="json_server_error">Communication error. Please try again!</string>
+
+  <!--Start Activity-->
+  <string name="agree_term_service">By signing in, you agree to our Terms of Service</string>
+
+  <!--Login Activity-->
+  <string name="login">Login</string>
+  <string name="username_hint">Your username</string>
+  <string name="password_hint">Your password</string>
+  <string name="facebook">Facebook</string>
+  <string name="google_plus">Google+</string>
+  <string name="or_login_with">Or login with</string>
+  <string name="forgot_password">"<u>Forgot Password?</u>"
+  </string>
+  <string name="create_the_exchange_account">Create The Exchange account</string>
+
+  <!--Register Activity-->
+  <string name="signup">Signup</string>
+  <string name="signup_username_hint">Choose a username</string>
+  <string name="signup_password_hint">Choose a password</string>
+  <string name="signup_phone_hint">Your phone number</string>
+  <string name="or_signup_with">Or signup with</string>
+  <string name="set_pictures_options_title">Set picture options</string>
+  <string name="set_pictures_options_message">How do you want to set your photo?</string>
+  <string name="from_gallery">From gallery</string>
+  <string name="from_camera">From camera</string>
+  <string name="one_more_step_to_join_us">Just one more step to join us</string>
+  <string name="signup_with">Signup with</string>
+
+  <!--Verify Account Activity-->
+  <string name="verify_your_account">Verify your account</string>
+  <string name="vefification_code_hint">Verification code</string>
+  <string name="verify_message_head">Thank you for registering Inkblot. We have sent you a SMS
+    message to verify your phone number
+  </string>
+  <string name="verify_message_tail">Please enter the code you received in the message to finish the
+    registration.
+  </string>
+  <string name="didnt_receive_message">I didn\'t receive text message yet</string>
+  <string name="resend_the_code">Resend the code now</string>
+
+  <!--Forgot Password-->
+  <string name="recover_password">Recover password</string>
+  <string name="enter_username_to_recover_password">Enter username to recover your password.
+  </string>
+
+
+  <!--Browse Item Fragment-->
+  <string name="browse_item">BROWSE</string>
+
+
+  <!--Activity Fragment-->
+  <string name="activity">ACTIVITY</string>
+
+
+  <!--Profile Fragment-->
+  <string name="profile">PROFILE</string>
+
+  <!--Add List Activity-->
+  <string name="add_new_listing">Add new listing</string>
+  <string name="edit_listing">Edit listing</string>
+  <string name="cover_photo">Cover photo*</string>
+  <string name="details">Details</string>
+  <string name="category">Category</string>
+  <string name="choose_a_category">Choose a category</string>
+  <string name="title">Title</string>
+  <string name="title_hint">Name of the item</string>
+  <string name="description">Description</string>
+  <string name="place">Place</string>
+  <string name="where_to_meet_buyers">Where you want to meet buyers</string>
+  <string name="optional">Optional</string>
+  <string name="price">Price</string>
+  <string name="credits">Credits</string>
+  <string name="search_for_a_place">Search for a place</string>
+  <string name="unknown_place">Unknown place</string>
+
+  <!--Item browsing activity-->
+  <string name="search_within">Search within</string>
+  <string name="sort_filter">Sort/Filter</string>
+  <string name="from_upper">FROM</string>
+  <string name="km_upper">KM</string>
+  <string name="my_location">My location</string>
+  <string name="anywhere">Anywhere</string>
+  <string name="search">Search</string>
+  <string name="all_categories">All categories</string>
+  <string name="item_in_my_wishlist">Item in my wishlist</string>
+  <string name="apply">Apply</string>
+  <string name="sort_by">Sort by</string>
+  <string name="price_range">Price range (credit)</string>
+  <string name="sort_popular">Popular</string>
+  <string name="sort_recent">Recent</string>
+  <string name="sort_neareast">Nearest</string>
+  <string name="lowest_price">Lowest Price</string>
+  <string name="highest_price">Highest Price</string>
+  <string name="minimum_price">Minimum Price</string>
+  <string name="maximum_price">Maximum Price</string>
+  <string name="around">around</string>
+  <string name="m">m</string>
+  <string name="km">km</string>
+  <string name="kilometer">kilometer</string>
+  <string name="kilometers">kilometers</string>
+  <string name="not_available">Not available</string>
+  <string name="no_item_found">No item available here.</string>
+  <string name="share">Share</string>
+  <string name="select_a_location">Select a location</string>
+
+
+  <!--Item Details Activity-->
+  <string name="away">away</string>
+  <string name="rate_this_seller">"<u>Rate this seller</u>"
+  </string>
+  <string name="share_this_listing">Share this listing</string>
+  <string name="wish_list">Wishlist</string>
+  <string name="chat">Chat</string>
+  <string name="offer">Offer</string>
+  <string name="edit">Edit</string>
+  <string name="delete">Delete</string>
+  <string name="view_offers">View offers</string>
+  <string name="verify_transaction">Verify transaction</string>
+  <string name="gone_view_chat">Item gone - view chat</string>
+  <string name="gone">Gone</string>
+  <string name="verification_pending">Verification pending</string>
+  <string name="public_comment">Public comments</string>
+  <string name="no_description_available">No description available.</string>
+  <string name="meet_the_seller">Meet the seller</string>
+  <string name="add_to_wish_list">Add to wishlist</string>
+  <string name="remove_from_wish_list">Remove from wishlist</string>
+  <string name="report_item">Report this item</string>
+  <string name="unreport_item">Unreport this item</string>
+  <string name="specify_report_reason">Please specify why you report this item.</string>
+  <string name="people_who_want_it">People who want it</string>
+  <string name="public_comments">Public comments</string>
+  <string name="post_a_comment">Post a comment</string>
+  <string name="post_a_public_comment">Post a public comment...</string>
+  <string name="posting">Posting...</string>
+  <string name="posting_try_again">Failed to post. Try again?</string>
+  <string name="edit_delete_options">Do you want to edit or delete this item?</string>
+  <string name="ask_delete_item">Delete this item?</string>
+  <string name="share_via_email">Share via email...</string>
+
+
+  <!--Profile-->
+  <string name="inventory">Inventory</string>
+  <string name="inbox">Inbox</string>
+  <string name="unknown_location">Unknown place</string>
+  <string name="no_rating">No rating</string>
+  <string name="edit_profile">Edit profile</string>
+  <string name="all_offers">All offers</string>
+  <string name="history">History</string>
+  <string name="need_more">"<u>Need more?</u>"
+  </string>
+  <string name="total_credit">Total credit:</string>
+  <string name="bio">Bio</string>
+  <string name="nothing_to_show">No thing to show.</string>
+  <string name="report_this_user">Report this user</string>
+  <string name="block_this_user">Block this user</string>
+  <string name="unblock_this_user">Unblock this user</string>
+  <string name="user_has_no_rating">This user has no rating yet</string>
+  <string name="you_have_no_rating">You have no rating yet</string>
+
+  <!--Inventory-->
+  <string name="my_inventory">My inventory</string>
+  <string name="of">of</string>
+
+  <!--Wishlist-->
+  <string name="my_wishlist">My wishlist</string>
+  <string name="add_new_item_to_wishlist">Add new item to wishlist</string>
+  <string name="wishlist_title_hint">Name of the item that you want</string>
+  <string name="min_price">Min price</string>
+  <string name="max_price">Max price</string>
+  <string name="unspecified">unspecified</string>
+  <string name="options">Options</string>
+  <string name="remove">Remove</string>
+
+  <!--Edit Profile-->
+  <string name="public_profile">Public profile</string>
+  <string name="username">Username</string>
+  <string name="firstname">First name</string>
+  <string name="lastname">Last name</string>
+  <string name="my_city">My city</string>
+  <string name="gender">Gender</string>
+  <string name="male">Male</string>
+  <string name="female">Female</string>
+  <string name="profile_picture">Profile photo</string>
+  <string name="private_profile">Private profile</string>
+  <string name="email">Email</string>
+  <string name="birthday">Birthday</string>
+
+  <!--Inbox-->
+  <string name="archive">Archive</string>
+  <string name="archive_warning">Move this conversation to archive?</string>
+  <string name="delete_warning">Delete this conversation?</string>
+  <string name="you_made_an_offer">You made an offer</string>
+  <string name="sent_you_an_offer">sent you an offer</string>
+  <string name="you_accepted_offer">You accepted offer</string>
+  <string name="accepted_your_offer">Accepted your offer</string>
+  <string name="with">with</string>
+  <string name="and_some_items">and some items</string>
+
+  <!--Archive-->
+  <string name="move_to_inbox_warning">Move this conversation back to inbox?</string>
+
+  <!--Chat Activity-->
+  <string name="type_message_hint">Type message here...</string>
+  <string name="delete_this_conversation">Delete this conversation</string>
+  <string name="send_again">"<u>Sending failed. Try again?</u>"
+  </string>
+
+  <!--Offer Activity-->
+  <string name="your_offer">Your offer</string>
+  <string name="offer_guide">Tap to change the price you are willing to purchase this item</string>
+  <string name="get_more_credits">Get more credits</string>
+  <string name="add_more_items">Or add items from your inventory as part of the trade</string>
+  <string name="add_maximum_4_items">You can add 4 items at maximum</string>
+
+  <!--Offers list activity-->
+  <string name="no_offer_found">No offer available</string>
+  <string name="list_of_offers">List of offers</string>
+  <string name="offered">offered</string>
+  <string name="credit">credit</string>
+  <string name="credit_s">credits</string>
+  <string name="plus">plus</string>
+  <string name="accept_or_reject">Accept or reject this offer?</string>
+  <string name="accept">Accept</string>
+  <string name="reject">Reject</string>
+  <string name="accepted">Accepted</string>
+  <string name="rejected">Rejected</string>
+  <string name="pending">Pending</string>
+  <string name="verification_required">Verification Required</string>
+  <string name="completed">Completed</string>
+  <string name="waiting_for">Waiting</string>
+  <string name="to_verify">to verify</string>
+  <string name="buyer">buyer</string>
+  <string name="seller">seller</string>
+  <string name="accept_offer_question">Accept this offer?</string>
+  <string name="reject_offer_question">Reject this offer?</string>
+
+  <!--Verify transaction-->
+  <string name="request_verify_message">You will receive a verification code for using in the next
+    step via an sms message. Proceed?
+  </string>
+  <string name="pending_verify_message">Please wait for the other party to verify and complete this
+    transaction
+  </string>
+  <string name="you_accepeted_offer_from">You accepted an offer from</string>
+  <string name="your_offer_was_accepted">Your offer was accepted by</string>
+  <string name="enter_the_verification_code">Please enter the code we\'ve sent to your phone to
+    complete the transaction
+  </string>
+
+  <!--Rate seller-->
+  <string name="how_you_feel">How do you feel about this seller?</string>
+  <string name="rate">Rate</string>
+  <string name="rate_seller">Rate seller</string>
+  <string name="how_do_you_feel_about">How do you feel about</string>
+  <string name="complain_about_seller">"<u>Complain about this seller if you are not satisfied</u>"
+  </string>
+  <string name="great_buyer_to_deal_with">Great buyer to deal with!</string>
+  <string name="punctual">Punctual!</string>
+  <string name="pleasant_transaction">Pleasant transaction!</string>
+  <string name="speedy_replies">Speedy replies.</string>
+  <string name="thank_you">Thank you!</string>
+  <string name="item_is_not_as_promised">Item is not as promised</string>
+  <string name="item_is_defective">Item is defective</string>
+  <string name="late_delivery">Late delivery</string>
+  <string name="review_hint">Your review</string>
+
+  <!--All Offer Activity-->
+  <string name="buying">BUYING</string>
+  <string name="selling">SELLING</string>
+  <string name="offer_lowcase">offer</string>
+  <string name="offers_lowcase">offers</string>
+
+  <!--Activity Feed-->
+  <string name="no_activity_found">No activity found</string>
+  <string name="activity_comment">commented on your item</string>
+  <string name="activity_add_wishlist">added your item into wishlist</string>
+
+  <!--Transaction history-->
+  <string name="transaction_history">Transaction history</string>
+  <string name="bought">Bought</string>
+  <string name="sold_out">Sold</string>
+  <string name="bought_with">Bought with</string>
+  <string name="sold_out_with">Sold out with</string>
+
+  <!--Find & Invite-->
+  <string name="find_and_invite_friends">Find &amp; Invite friends</string>
+  <string name="find_user_on_the_exchange">Find users on the exchange</string>
+  <string name="search_by_username_or_name">Search by username or name</string>
+  <string name="invite_friends">Invite friends</string>
+  <string name="no_user_found">No user found</string>
+
+  <!--Settings-->
+  <string name="settings">Settings</string>
+  <string name="language">Language</string>
+  <string name="change_password">Change password</string>
+  <string name="logout">Logout</string>
+  <string name="more_information">More information</string>
+  <string name="getting_started_guide">Getting started guide</string>
+  <string name="trade_credit_ranking">Trade credit ranking</string>
+  <string name="help_n_faq">Help &amp; FAQ</string>
+  <string name="email_support">Email support/Feedback</string>
+  <string name="community_rules">Community rules</string>
+  <string name="about_the_exchange">About The Exchange</string>
+
+  <!--Change Password-->
+  <string name="old_pass_hint">Old password</string>
+  <string name="new_pass_hint">New password</string>
+  <string name="confirm_new_pass_hint">Confirm new password</string>
+  <string name="reset_password">Reset password</string>
+
+  <!--Get Credits-->
+  <string name="select_credit_pack">Please select one of the below credit packs.</string>
+  <string name="credits_pack">credits pack</string>
+  <string name="chosen_credit_pack">You\'ve chosen</string>
+  <string name="which_costs">which costs</string>
+  <string name="google_play">Google Play</string>
+  <string name="paypal">Paypal</string>
+  <string name="choose_payment_method">Please choose one of the below payment methods.</string>
+
+  <!--Tutorial-->
+  <string name="tut_date">3 hours ago</string>
+  <!--Home-->
+  <string name="tut_got_it">GOT IT</string>
+  <string name="tut_next">NEXT</string>
+  <string name="tut_welcome">Welcome to TheExchange. Getting started is easy!</string>
+  <string name="tut_upload_item">Tap here to upload item you want to trade.</string>
+  <string name="tut_look_for_item">Look for items you want here</string>
+  <!--Add listing-->
+  <string name="cover_photo_required">Cover photo is required</string>
+  <string name="tut_add_item_picture">Add your item\'s photos here. You can add 4 photos at
+    maximum.
+  </string>
+  <string name="tut_done_add_item">Fill in your item\'s details and tap here to upload when you are
+    done.
+  </string>
+  <!--Item browsing-->
+  <string name="tut_search_by_keyword">Fill in the keyword for the item you want and then tap search
+    button.
+  </string>
+  <string name="tut_adjust_range">You can adjust the center point and the range for the search.
+  </string>
+  <string name="tut_filter_by_category">Filter items by category.</string>
+  <string name="tut_sort">Select a sort type and define the price range here.</string>
+  <!--Item detail-->
+  <string name="tut_see_user_details">Tap on the seller\'s username to see more about his/her
+    details.
+  </string>
+  <string name="tut_edit_delete_item">Tap here to edit or delete your item</string>
+  <string name="tut_view_offer">Tap here to view all offers on this item</string>
+  <string name="tut_contact_seller">Tap here to start a conversation with the seller</string>
+  <string name="tut_make_an_offer">Tap here to make an offer.</string>
+
+  <!--Offer-->
+  <string name="tut_get_credit">Trade Credits let you top up an offer. Get them here.</string>
+
+
+</resources>

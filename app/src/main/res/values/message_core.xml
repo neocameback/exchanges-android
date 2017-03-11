@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="message_loading">Loading...</string>
+  <string name="message_please_wait">Please wait...</string>
+  <string name="message_network_is_unavailable">Network is unavailable.</string>
+  <string name="message_server_error">There is an error from server, please try again.</string>
+  <string name="message_error_cant_extract_server_response">Error. Can\'t extract server\'s response
+    data.
+  </string>
+
+
+  <!--Login & Signup-->
+  <string name="message_login_successfully">Login successfully</string>
+  <string name="message_login_failed">Login failed. Please try again</string>
+  <string name="message_register_successfully">Register successfully</string>
+  <string name="message_register_failed">Register failed. Please try again</string>
+
+  <!--Verify Account-->
+  <string name="message_alert_verification_code">Verification code is required!</string>
+  <string name="message_verify_successfully">Your account has been verified!</string>
+
+  <!--Add listing-->
+  <string name="message_upload_item_successfully">Your item has been posted</string>
+  <string name="message_upload_item_failed">Your item failed to post</string>
+  <string name="message_update_item_successfully">Your item has been updated</string>
+
+  <!--Item Details-->
+  <string name="message_report_successfully">You reported this item</string>
+  <string name="message_unreport_successfully">You unreported this item</string>
+  <string name="message_delete_successfully">Your item has been deleted</string>
+
+  <!--UserProfile-->
+  <string name="message_report_user_successfully">You reported this user</string>
+  <string name="message_block_user_successfully">You blocked this user</string>
+  <string name="message_unblock_user_successfully">You unblocked this user</string>
+
+  <!--Wishlist-->
+  <string name="message_add_wishlist_successfully">Your wishlist has been updated</string>
+
+  <!--Edit profile-->
+  <string name="message_update_profile_successfully">Your profile has been updated</string>
+
+  <!--Make offer-->
+  <string name="message_make_offer_successfully">Your offer has been made</string>
+
+  <!--Verify Transaction-->
+  <string name="message_verify_transaction_successfully">Your verification was successful.</string>
+  <string name="message_transaction_completed">The transaction is now completed</string>
+  <string name="message_wait_verify_buyer">Please wait for the buyer to verify this transaction
+  </string>
+  <string name="message_wait_verify_seller">Please wait for the seller to verify this transaction
+  </string>
+
+  <!--Rate seller-->
+  <string name="message_rate_seller_successfully">Your rating has been submitted</string>
+
+  <!--Change Pass-->
+  <string name="message_change_pass_successfully">Your password has been changed successfully
+  </string>
+
+  <!--Reset pass-->
+  <string name="message_reset_pass_successfully">Your new password has been sent to your phone
+    number. Please check your sms.
+  </string>
+
+  <!--Buy credit-->
+  <string name="message_buy_credit_successfully">Your top-up has been updated successfully</string>
+
+</resources>

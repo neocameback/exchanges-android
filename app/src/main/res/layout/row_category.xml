@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/Layout.FillWidth.Vertical"
+              android:background="@drawable/bg_grid_category_selector">
+
+  <com.pendulab.theExchange.widget.ScaleImageView
+      android:id="@+id/ivCategory"
+      android:layout_width="@dimen/button_size_large"
+      android:layout_height="@dimen/button_size_large"
+      android:adjustViewBounds="true"
+      android:layout_gravity="center"
+      android:contentDescription="@string/app_name"
+      android:scaleType="fitXY"/>
+
+  <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+      android:id="@+id/tvName"
+      style="@style/Layout.FillWidth"
+      android:lines="2"
+      android:layout_alignParentBottom="true"
+      android:paddingBottom="@dimen/margin_padding_tiny"
+      android:paddingLeft="@dimen/margin_padding_tiny"
+      android:paddingTop="@dimen/margin_padding_small"
+      android:text="10"
+      android:gravity="center"
+      android:textColor="@color/app_primary_text_color"
+      android:textSize="@dimen/text_size_xnormal"/>
+
+  <View
+      android:id="@+id/viewTransparent"
+      style="@style/Layout.FillWidth"
+      android:background="@drawable/bg_cell_selector"/>
+
+</LinearLayout>
+
+

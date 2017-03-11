@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+  <LinearLayout
+      style="@style/Layout.FillWidth.Vertical"
+      android:padding="@dimen/margin_padding_small">
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.WrapWidthHeight"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:gravity="center_horizontal"
+        android:text="@string/app_version"
+        android:textAllCaps="true"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_small"
+        android:layout_marginTop="@dimen/margin_padding_small"
+        android:background="@color/item_border"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvLanguage"
+        style="@style/Layout.FillWidth"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_xsmall"
+        android:paddingTop="@dimen/margin_padding_xsmall"
+        android:text="@string/language"
+        android:clickable="true"
+        android:onClick="onLanguage"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:background="@color/item_border"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvChangePass"
+        style="@style/Layout.FillWidth"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_xsmall"
+        android:paddingTop="@dimen/margin_padding_xsmall"
+        android:text="@string/change_password"
+        android:clickable="true"
+        android:onClick="onChangePassword"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:background="@color/item_border"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.FillWidth"
+        android:id="@+id/tvLogout"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_xsmall"
+        android:paddingTop="@dimen/margin_padding_xsmall"
+        android:text="@string/logout"
+        android:clickable="true"
+        android:onClick="onLogout"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.FillWidth"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_small"
+        android:paddingTop="@dimen/margin_padding_xlarge"
+        android:text="@string/more_information"
+        android:textAllCaps="true"
+        android:textColor="@color/app_primary_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_small"
+        android:background="@color/item_border"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvGettingStarted"
+        style="@style/Layout.FillWidth"
+        android:clickable="true"
+        android:onClick="onGettingStarted"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_xsmall"
+        android:paddingTop="@dimen/margin_padding_xsmall"
+        android:text="@string/getting_started_guide"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:background="@color/item_border"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.FillWidth"
+        android:id="@+id/tvTradeRanking"
+        android:clickable="true"
+        android:onClick="onTradeCreditRanking"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_xsmall"
+        android:paddingTop="@dimen/margin_padding_xsmall"
+        android:text="@string/trade_credit_ranking"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:background="@color/item_border"/>
+
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvHelp"
+        style="@style/Layout.FillWidth"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_xsmall"
+        android:paddingTop="@dimen/margin_padding_xsmall"
+        android:text="@string/help_n_faq"
+        android:clickable="true"
+        android:onClick="onHelp"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:background="@color/item_border"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.FillWidth"
+        android:id="@+id/tvEmailSupport"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_xsmall"
+        android:paddingTop="@dimen/margin_padding_xsmall"
+        android:text="@string/email_support"
+        android:clickable="true"
+        android:onClick="onEmailSupport"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:background="@color/item_border"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        android:id="@+id/tvCommunityRule"
+        style="@style/Layout.FillWidth"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_xsmall"
+        android:paddingTop="@dimen/margin_padding_xsmall"
+        android:text="@string/community_rules"
+        android:clickable="true"
+        android:onClick="onCommunityRule"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/border_width_tiny"
+        android:background="@color/item_border"/>
+
+    <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+        style="@style/Layout.FillWidth"
+        android:id="@+id/tvAbout"
+        android:clickable="true"
+        android:onClick="onAbout"
+        android:background="@drawable/bg_white_selector"
+        android:paddingBottom="@dimen/margin_padding_xsmall"
+        android:paddingTop="@dimen/margin_padding_xsmall"
+        android:text="@string/about_the_exchange"
+        android:textColor="@color/app_primary_text_color"
+        android:textSize="@dimen/text_size_xxnormal"/>
+
+  </LinearLayout>
+
+</ScrollView>

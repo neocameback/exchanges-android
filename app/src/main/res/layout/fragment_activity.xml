@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/Layout.FillWidthHeight">
+
+  <!--<android.support.v4.widget.SwipeRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"-->
+  <!--xmlns:rb="http://schemas.android.com/tools"-->
+  <!--android:id="@+id/srlInbox"-->
+  <!--style="@style/Layout.FillWidthHeight"-->
+  <!--android:visibility="gone">-->
+
+  <!--<com.baoyz.swipemenulistview.SwipeMenuListView-->
+  <!--android:id="@+id/lvInbox"-->
+  <!--android:layout_width="match_parent"-->
+  <!--android:layout_height="match_parent"-->
+  <!--android:divider="@color/item_border"-->
+  <!--android:dividerHeight="@dimen/border_width_very_tiny" />-->
+
+  <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/swipeRefreshLayout"
+      style="@style/Layout.FillWidthHeight"
+      android:layout_below="@+id/llItem">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true">
+
+      <ListView
+          android:id="@+id/lvActivity"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@+id/toolbar"
+          android:layout_marginBottom="@dimen/margin_padding_small"
+          android:background="@color/white"
+          android:listSelector="@drawable/bg_white_selector"
+          android:paddingLeft="@dimen/margin_padding_small"
+          android:paddingRight="@dimen/margin_padding_small"
+          android:scrollbarStyle="outsideOverlay"/>
+
+      <com.pendulab.theExchange.fontWidget.ProximaNovaRegularTextView
+          android:id="@+id/tvNoResult"
+          style="@style/Layout.FillWidth"
+          android:layout_centerInParent="true"
+          android:gravity="center"
+          android:singleLine="true"
+          android:text="@string/no_activity_found"
+          android:textColor="@color/app_primary_color"
+          android:textSize="@dimen/text_size_large"
+          android:visibility="gone"/>
+    </RelativeLayout>
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+  <LinearLayout
+      android:id="@+id/llBottom"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="@color/white"
+      android:visibility="gone"
+      android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rlFeed"
+        style="@style/Layout.Weight.Width"
+        android:layout_marginRight="1dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_actionbar_selector"
+        android:padding="@dimen/margin_padding_tiny">
+
+      <ImageView
+          android:layout_width="@dimen/button_size_normal"
+          android:layout_height="@dimen/button_size_normal"
+          android:layout_centerInParent="true"
+          android:padding="5dp"
+          android:src="@drawable/ic_feed"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlInbox"
+        style="@style/Layout.Weight.Width"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_actionbar_selector"
+        android:padding="@dimen/margin_padding_tiny">
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="@dimen/button_size_normal"
+            android:layout_height="@dimen/button_size_normal"
+            android:src="@drawable/ic_action_inbox"/>
+
+        <com.pendulab.theExchange.fontWidget.NotificationTextView
+            android:id="@+id/tvNewMessage"
+            style="@style/Layout.WrapWidthHeight"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/button_size_small"
+            android:background="@drawable/bg_notification_red"
+            android:gravity="center"
+            android:padding="1dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+      </RelativeLayout>
+    </RelativeLayout>
+
+  </LinearLayout>
+</RelativeLayout>
